@@ -26,7 +26,7 @@
                     },
                     {
                         "value": 1000,
-                        "clue": "Ryan Coogler once said on TikTok the DCOM \"The Luck of the Irish\" influenced this film of his--he also noted Bram Stoker was Irish",
+                        "clue": "Ryan Coogler said on TikTok that the Disney Channel movie \"The Luck of the Irish\" influenced this 2025 film of his; he also noted Bram Stoker was Irish",
                         "solution": "What is Sinners?"
                     }
                 ]
@@ -36,7 +36,7 @@
                 "clues": [
                     {
                         "value": 200,
-                        "clue": "This actress's deadpan dance to \"Goo Goo Muck\" went viral after she played the title role in Wednesday",
+                        "clue": "This actress's deadpan dance to \"Goo Goo Muck\" went viral after she played the title role in \"Wednesday\"",
                         "solution": "Who is Jenna Ortega?"
                     },
                     {
@@ -81,7 +81,7 @@
                     },
                     {
                         "value": 800,
-                        "clue": "With \"Cowboy Carter\", she became the first Black woman to win the Grammy for Best Country Album",
+                        "clue": "With \"Cowboy Carter,\" she became the first Black woman to win the Grammy for Best Country Album",
                         "solution": "Who is Beyoncé?"
                     },
                     {
@@ -177,8 +177,8 @@
                     },
                     {
                         "value": 1000,
-                        "clue": "\"Is that your final answer?\" became a national catchphrase thanks to this original host of \"Who Wants to Be a Millionaire\"",
-                        "solution": "Who is Regis Philbin?"
+                        "clue": "Sam Reich says \"I've been here the whole time!\" to open episodes of this Dropout game show",
+                        "solution": "What is Game Changer?"
                     }
                 ]
             }
@@ -209,7 +209,7 @@
                     },
                     {
                         "value": 2000,
-                        "clue": "A pretend pirate gets lost in his own furniture store in this 2026 film.",
+                        "clue": "A pretend pirate gets lost in his own furniture store in this 2026 film",
                         "solution": "What is Backrooms?"
                     }
                 ]
@@ -249,12 +249,12 @@
                 "clues": [
                     {
                         "value": 400,
-                        "clue": "1,000 contestants battled for a record $5 million prize on \"Beast Games\", this YouTuber's Prime Video competition",
-                        "solution": "Who is MrBeast?"
+                        "clue": "1,000 contestants battled for a record $5 million prize in a reality competition created by Jimmy Donaldson, better known by this name",
+                        "solution": "Who is Mr. Beast?"
                     },
                     {
                         "value": 800,
-                        "clue": "Singles get engaged sight unseen, talking only through the walls of separate \"pods\", on this Netflix hit",
+                        "clue": "Singles get engaged sight unseen, talking only through the walls of separate \"pods,\" on this Netflix hit",
                         "solution": "What is Love Is Blind?"
                     },
                     {
@@ -285,7 +285,7 @@
                     },
                     {
                         "value": 800,
-                        "clue": "Zendaya debuted an engagement ring at this 2025 award show alongside Tom Holland.",
+                        "clue": "Zendaya debuted an engagement ring from Tom Holland at this 2025 awards show",
                         "solution": "What are the Golden Globes?"
                     },
                     {
@@ -368,9 +368,9 @@
             }
         ],
         "final": {
-            "category": "Animated Hits",
-            "clue": "In 2025 this film became Netflix's most-watched movie ever, & its song \"Golden\" hit No. 1 on the Billboard Hot 100",
-            "solution": "What is KPop Demon Hunters?"
+            "category": "Words of the Year",
+            "clue": "Oxford's 2024 word of the year, it's what doomscrolling junk content supposedly does to your mind, though Thoreau used the term back in 1854",
+            "solution": "What is brain rot?"
         }
     }
 }
