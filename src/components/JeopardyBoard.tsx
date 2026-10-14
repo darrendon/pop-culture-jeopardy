@@ -172,7 +172,7 @@ function JeopardyBoard(props: JeopardyBoardProps) {
   }
 
   return (
-    <div>
+    <div className="board">
       <table>
         <thead>
           <tr>

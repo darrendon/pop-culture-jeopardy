@@ -185,7 +185,7 @@ function App() {
     }
 
     return (
-      <div className="app">
+      <div className="app game-screen">
         {currentCategoryIndex === null &&
           currentClueIndex === null &&
           allowProceedToDouble && (
@@ -205,15 +205,17 @@ function App() {
             </div>
           )}
 
-        <JeopardyBoard
-          board={board}
-          backToBoard={returnToBoard}
-          categoryShown={handleCategoryShown}
-          chooseClue={chooseClue}
-          categoriesShown={numCategoriesShown}
-          currentCategory={currentCategoryIndex}
-          currentClue={currentClueIndex}
-        />
+        <div className="game-main">
+          <JeopardyBoard
+            board={board}
+            backToBoard={returnToBoard}
+            categoryShown={handleCategoryShown}
+            chooseClue={chooseClue}
+            categoriesShown={numCategoriesShown}
+            currentCategory={currentCategoryIndex}
+            currentClue={currentClueIndex}
+          />
+        </div>
         <Scoreboard
           players={players}
           currentValue={
@@ -238,8 +240,10 @@ function App() {
   } else if (round === "final") {
     const final = game.final;
     return (
-      <div>
-        <FinalJeopardy final={final} onFinishGame={finishGame} />
+      <div className="game-screen">
+        <div className="game-main">
+          <FinalJeopardy final={final} onFinishGame={finishGame} />
+        </div>
         <Scoreboard
           players={players}
           currentValue={0}

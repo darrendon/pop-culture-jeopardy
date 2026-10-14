@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Fira+Code&display=swap");
 body {
   background-color: black;
   color: white;
@@ -17,13 +18,36 @@ table {
 
 td {
   border: 5px solid black;
-  padding: 20px;
+  padding: 1vh 0.5vw;
   width: 140px;
   text-align: center;
 }
 
+/* The board fills the space above the scoreboard */
+.board {
+  height: 100%;
+}
+
+.board table {
+  height: 100%;
+}
+
+.board thead tr {
+  height: 16%;
+}
+
+.board tbody tr {
+  height: 16.8%;
+}
+
 .category-container {
-  height: 600px;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.category-container > div {
+  height: 100%;
 }
 
 .category-box {
@@ -32,7 +56,7 @@ td {
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 600px;
+  height: 100%;
   background-color: #001699;
   float: left;
 }
@@ -59,26 +83,31 @@ td {
 .category-box .category {
   font-family: "Swiss921", sans-serif;
   text-transform: uppercase;
-  font-size: 120px;
-  padding-left: 100;
+  font-size: clamp(48px, 13vh, 180px);
+  padding: 0 4vw;
 }
 
 td.category-title {
   font-family: "Swiss921", sans-serif;
-  font-size: 28px;
+  font-size: clamp(16px, 3.4vh, 44px);
+  line-height: 1.1;
   text-transform: uppercase;
 }
 
 td.board-clue {
   font-family: "Swiss921", sans-serif;
-  font-size: 50px;
-  height: 65px;
+  font-size: clamp(28px, 8vh, 110px);
   color: #c99f57;
+  cursor: pointer;
 }
 
 .clue {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
   padding-left: 10px;
   padding-right: 10px;
+  box-sizing: border-box;
 }
 
 .clue-display {
@@ -90,21 +119,24 @@ td.board-clue {
   font-family: "Korinna", serif;
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 50px;
+  font-size: clamp(28px, 6vh, 84px);
+  line-height: 1.25;
   width: 100%;
-  min-height: 600px;
+  flex: 1;
+  min-height: 0;
   box-sizing: border-box;
-  padding: 20px;
+  padding: 3vh 6vw;
+  overflow: hidden;
 }
 
 .final-category {
   font-family: "Swiss921", sans-serif;
-  font-size: 90px;
+  font-size: clamp(48px, 12vh, 160px);
   font-weight: normal;
 }
 
 .daily-double {
-  font-size: 90px;
+  font-size: clamp(56px, 15vh, 200px);
 }
 
 .clue-category-label {
@@ -113,11 +145,10 @@ td.board-clue {
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
-  font-size: 28px;
-  padding: 10px;
+  font-size: clamp(16px, 3.5vh, 44px);
+  padding: 1vh;
 }
 
-@import url("https://fonts.googleapis.com/css?family=Fira+Code&display=swap");
 .code {
   font-family: "Consolas", "Fira Code", monospace;
   text-transform: none;
@@ -143,7 +174,7 @@ td.board-clue {
 .clue-media img,
 .clue-media video {
   max-width: 80vw;
-  max-height: 50vh;
+  max-height: 42vh;
   border: 4px solid white;
 }
 

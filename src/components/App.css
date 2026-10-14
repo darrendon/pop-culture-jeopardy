@@ -2,21 +2,56 @@
   background-color: #001699;
   color: white;
   width: 500px;
-  height: 50px;
-  font: Arial;
-  font-size: 28px;
+  height: 6vh;
+  font-family: Arial, sans-serif;
+  font-size: clamp(18px, 3vh, 36px);
   border-radius: 5px;
   border: none;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 0;
+  margin-bottom: 1vh;
   display: block;
+  flex-shrink: 0;
+  cursor: pointer;
 }
 
+/* Tucked in a corner so it doesn't take up screen space on the TV */
 .download {
+  position: fixed;
+  left: 6px;
+  bottom: 6px;
   background-color: #404040;
+  color: #ccc;
   border: none;
-  margin-top: 100px;
   border-radius: 3px;
+  font-size: 11px;
+  opacity: 0.35;
+  cursor: pointer;
+}
+
+.download:hover {
+  opacity: 1;
+}
+
+/* Game screens fill the whole TV: board or clue on top, scores below */
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+.game-screen {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 1vh 0.6vw 1.5vh;
+  overflow: hidden;
+}
+
+.game-main {
+  flex: 1;
+  min-height: 0;
 }
