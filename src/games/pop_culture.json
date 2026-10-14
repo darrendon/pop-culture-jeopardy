@@ -2,6 +2,157 @@
     "game": {
         "single": [
             {
+                "category": "TikTok Talk",
+                "clues": [
+                    {
+                        "value": 200,
+                        "clue": "Charli D'Amelio became TikTok's biggest star after posting herself doing this dance, created by teen Jalaiah Harmon",
+                        "solution": "What is the Renegade?"
+                    },
+                    {
+                        "value": 400,
+                        "clue": "Dictionary.com's 2024 word of the year, it took off when Jools Lebron described her workday look as \"very ___, very mindful\"",
+                        "solution": "What is demure?"
+                    },
+                    {
+                        "value": 600,
+                        "clue": "In 2023 TikTokers asked the men in their lives how often they think about this ancient civilization",
+                        "solution": "What is the Roman Empire?"
+                    },
+                    {
+                        "value": 800,
+                        "clue": "Known for silently shrugging at overcomplicated \"life hacks\", this Senegal-born creator passed Charli D'Amelio as TikTok's most-followed person in 2022",
+                        "solution": "Who is Khaby Lame?"
+                    },
+                    {
+                        "value": 1000,
+                        "clue": "Dictionary.com's 2025 word of the year, this pair of numbers from a Skrilla song drove middle-school teachers up the wall",
+                        "solution": "What is 6-7?"
+                    }
+                ]
+            },
+            {
+                "category": "Streaming Sensations",
+                "clues": [
+                    {
+                        "value": 200,
+                        "clue": "Jenna Ortega's deadpan dance to \"Goo Goo Muck\" went viral after she played the title role in this Netflix series",
+                        "solution": "What is Wednesday?"
+                    },
+                    {
+                        "value": 400,
+                        "clue": "Penelope Featherington secretly writes as Lady Whistledown on this Netflix Regency drama",
+                        "solution": "What is Bridgerton?"
+                    },
+                    {
+                        "value": 600,
+                        "clue": "Carmy Berzatto takes over his late brother's Chicago sandwich shop on this FX series",
+                        "solution": "What is The Bear?"
+                    },
+                    {
+                        "value": 800,
+                        "clue": "Lumon Industries surgically splits its workers' memories between the office & home on this Apple TV+ series",
+                        "solution": "What is Severance?"
+                    },
+                    {
+                        "value": 1000,
+                        "clue": "This FX drama set in feudal Japan won a record 18 Emmys for a single season in 2024",
+                        "solution": "What is Shōgun?"
+                    }
+                ]
+            },
+            {
+                "category": "2020s Pop",
+                "clues": [
+                    {
+                        "value": 200,
+                        "clue": "Taylor Swift's record-breaking 2023-24 tour was named for these",
+                        "solution": "What are the Eras?"
+                    },
+                    {
+                        "value": 400,
+                        "clue": "Sabrina Carpenter's 2024 hit about being irresistible is named for this coffee drink",
+                        "solution": "What is \"Espresso\"?"
+                    },
+                    {
+                        "value": 600,
+                        "clue": "A lime-green cover with a blurry 4-letter title launched a summer craze for this 2024 Charli xcx album",
+                        "solution": "What is Brat?"
+                    },
+                    {
+                        "value": 800,
+                        "clue": "With \"Cowboy Carter\", she became the first Black woman to win the Grammy for Best Country Album",
+                        "solution": "Who is Beyoncé?"
+                    },
+                    {
+                        "value": 1000,
+                        "clue": "The \"Good Luck, Babe!\" & \"Hot to Go!\" singer won Best New Artist at the 2025 Grammys",
+                        "solution": "Who is Chappell Roan?"
+                    }
+                ]
+            },
+            {
+                "category": "Halftime Heroes",
+                "clues": [
+                    {
+                        "value": 200,
+                        "clue": "This \"Umbrella\" singer was pregnant with her second child during her 2023 halftime show",
+                        "solution": "Who is Rihanna?"
+                    },
+                    {
+                        "value": 400,
+                        "clue": "In 2024 this R&B star roller-skated through his halftime set in Las Vegas",
+                        "solution": "Who is Usher?"
+                    },
+                    {
+                        "value": 600,
+                        "clue": "In 2021 this \"Blinding Lights\" singer stumbled through a mirrored funhouse during his halftime show in Tampa",
+                        "solution": "Who is The Weeknd?"
+                    },
+                    {
+                        "value": 800,
+                        "clue": "SZA joined this \"Not Like Us\" rapper on the Super Bowl stage in New Orleans in 2025",
+                        "solution": "Who is Kendrick Lamar?",
+                        "dailyDouble": true
+                    },
+                    {
+                        "value": 1000,
+                        "clue": "Performing almost entirely in Spanish, this Puerto Rican superstar headlined the Super Bowl LX halftime show in 2026",
+                        "solution": "Who is Bad Bunny?"
+                    }
+                ]
+            },
+            {
+                "category": "Meme Team",
+                "clues": [
+                    {
+                        "value": 200,
+                        "clue": "Bernie Sanders' cozy pair of these at the 2021 inauguration got photoshopped into everything",
+                        "solution": "What are mittens?"
+                    },
+                    {
+                        "value": 400,
+                        "clue": "This baby pygmy hippo at a Thai zoo became a 2024 internet star thanks to her bad attitude",
+                        "solution": "Who is Moo Deng?"
+                    },
+                    {
+                        "value": 600,
+                        "clue": "In 2023 TikTokers staged fake horror scenes after sipping this purple McDonald's drink",
+                        "solution": "What is the Grimace Shake?"
+                    },
+                    {
+                        "value": 800,
+                        "clue": "A Melbourne aquarium's enormous, fluffy king penguin chick became a 2024 celebrity under this sauce-y name",
+                        "solution": "Who is Pesto?"
+                    },
+                    {
+                        "value": 1000,
+                        "clue": "A cartoon dog in a sweater, hands in his pockets, became 2024's go-to meme under this 2-word name",
+                        "solution": "What is Chill Guy?"
+                    }
+                ]
+            },
+            {
                 "category": "Say the Line!",
                 "clues": [
                     {
@@ -30,157 +181,6 @@
                         "solution": "What is Good Times?"
                     }
                 ]
-            },
-            {
-                "category": "Mascot Madness",
-                "clues": [
-                    {
-                        "value": 200,
-                        "clue": "Tony the Tiger insists this cereal is \"Gr-r-reat!\"",
-                        "solution": "What is Frosted Flakes?"
-                    },
-                    {
-                        "value": 400,
-                        "clue": "The Kool-Aid Man bursts through walls shouting this 2-word catchphrase",
-                        "solution": "What is \"Oh, yeah!\"?"
-                    },
-                    {
-                        "value": 600,
-                        "clue": "This insurance company's gecko pitches its policies with a British accent",
-                        "solution": "What is GEICO?"
-                    },
-                    {
-                        "value": 800,
-                        "clue": "In 2020 this snack brand \"killed off\" its monocled mascot, Mr. Peanut, ahead of the Super Bowl",
-                        "solution": "What is Planters?"
-                    },
-                    {
-                        "value": 1000,
-                        "clue": "The Michelin Man's official name, taken from a Latin toast on an 1898 poster, is this",
-                        "solution": "What is Bibendum?"
-                    }
-                ]
-            },
-            {
-                "category": "Halftime Heroes",
-                "clues": [
-                    {
-                        "value": 200,
-                        "clue": "At the 2015 Super Bowl, a backup dancer dubbed \"Left Shark\" stole the show from this \"Roar\" singer",
-                        "solution": "Who is Katy Perry?"
-                    },
-                    {
-                        "value": 400,
-                        "clue": "A 2004 \"wardrobe malfunction\" with Justin Timberlake overshadowed the rest of this singer's halftime set",
-                        "solution": "Who is Janet Jackson?"
-                    },
-                    {
-                        "value": 600,
-                        "clue": "This \"Umbrella\" singer was pregnant with her second child during her 2023 halftime show",
-                        "solution": "Who is Rihanna?"
-                    },
-                    {
-                        "value": 800,
-                        "clue": "In 2007 this \"Little Red Corvette\" singer played \"Purple Rain\" in an actual Miami downpour",
-                        "solution": "Who is Prince?",
-                        "dailyDouble": true
-                    },
-                    {
-                        "value": 1000,
-                        "clue": "In 2025 this rapper performed his Drake diss \"Not Like Us\" at the Super Bowl in New Orleans",
-                        "solution": "Who is Kendrick Lamar?"
-                    }
-                ]
-            },
-            {
-                "category": "Internet History",
-                "clues": [
-                    {
-                        "value": 200,
-                        "clue": "A link that secretly leads to Rick Astley's \"Never Gonna Give You Up\" is the key to this prank",
-                        "solution": "What is Rickrolling?"
-                    },
-                    {
-                        "value": 400,
-                        "clue": "In 2016 players roamed parks & sidewalks hunting Pikachu in this augmented-reality game",
-                        "solution": "What is Pokémon Go?"
-                    },
-                    {
-                        "value": 600,
-                        "clue": "In 2022 the New York Times bought this daily 5-letter word game",
-                        "solution": "What is Wordle?"
-                    },
-                    {
-                        "value": 800,
-                        "clue": "Its creator pulled this pipe-dodging mobile game from app stores in 2014, at the height of its popularity",
-                        "solution": "What is Flappy Bird?"
-                    },
-                    {
-                        "value": 1000,
-                        "clue": "A 2017 meme built on a stock photo of a man ogling a passerby while his girlfriend glares at him goes by this name",
-                        "solution": "What is Distracted Boyfriend?"
-                    }
-                ]
-            },
-            {
-                "category": "It's in the \"Book\"",
-                "clues": [
-                    {
-                        "value": 200,
-                        "clue": "In 2004 Mark Zuckerberg launched this social network from his Harvard dorm room",
-                        "solution": "What is Facebook?"
-                    },
-                    {
-                        "value": 400,
-                        "clue": "Ryan Gosling & Rachel McAdams share a kiss in the rain in this 2004 Nicholas Sparks adaptation",
-                        "solution": "What is The Notebook?"
-                    },
-                    {
-                        "value": 600,
-                        "clue": "Baloo the bear sings \"The Bare Necessities\" in this 1967 Disney film",
-                        "solution": "What is The Jungle Book?"
-                    },
-                    {
-                        "value": 800,
-                        "clue": "Olivia Wilde made her directing debut with this 2019 comedy about 2 overachievers' last night of high school",
-                        "solution": "What is Booksmart?"
-                    },
-                    {
-                        "value": 1000,
-                        "clue": "In 2006 Apple retired the iBook & replaced it with this laptop line",
-                        "solution": "What is the MacBook?"
-                    }
-                ]
-            },
-            {
-                "category": "Broadway Bound",
-                "clues": [
-                    {
-                        "value": 200,
-                        "clue": "Lin-Manuel Miranda read Ron Chernow's biography of a Founding Father on vacation & turned it into this musical",
-                        "solution": "What is Hamilton?"
-                    },
-                    {
-                        "value": 400,
-                        "clue": "Billed as \"the untold story of the witches of Oz\", this musical opened on Broadway in 2003",
-                        "solution": "What is Wicked?"
-                    },
-                    {
-                        "value": 600,
-                        "clue": "Tina Fey adapted her own 2004 film into this musical, where on Wednesdays they still wear pink",
-                        "solution": "What is Mean Girls?"
-                    },
-                    {
-                        "value": 800,
-                        "clue": "Julie Taymor designed the life-size animal puppets that parade down the aisles in this Disney musical's opening number",
-                        "solution": "What is The Lion King?"
-                    },
-                    {
-                        "value": 1000,
-                        "clue": "Henry VIII's wives reunite as a pop girl group in this musical whose title is a number",
-                        "solution": "What is Six?"
-                    }
-                ]
             }
         ],
         "double": [
@@ -189,28 +189,119 @@
                 "clues": [
                     {
                         "value": 400,
-                        "clue": "A girl kills the first person she meets in a strange land, then teams up with 3 strangers to kill again in this 1939 film",
-                        "solution": "What is The Wizard of Oz?"
+                        "clue": "A retired Navy pilot has to teach a bunch of kids with nicknames how to fly in this 2022 sequel",
+                        "solution": "What is Top Gun: Maverick?"
                     },
                     {
                         "value": 800,
-                        "clue": "A grumpy widower takes a kid he barely knows to South America without telling the kid's parents in this 2009 Pixar film",
-                        "solution": "What is Up?"
+                        "clue": "A scientist builds something really big, then feels bad about it in this 2023 film that won Best Picture",
+                        "solution": "What is Oppenheimer?"
                     },
                     {
                         "value": 1200,
-                        "clue": "A teenager travels back in time & his own mother falls for him in this 1985 film",
-                        "solution": "What is Back to the Future?"
+                        "clue": "A green-skinned girl goes off to college & gets stuck with a popular roommate in this 2024 film",
+                        "solution": "What is Wicked?"
                     },
                     {
                         "value": 1600,
-                        "clue": "A businessman hires a crew to break into a man's dreams & plant an idea in this 2010 film",
-                        "solution": "What is Inception?"
+                        "clue": "A young man with a complicated family history takes a desert trip where giant worms try to eat him in this 2021 film",
+                        "solution": "What is Dune?"
                     },
                     {
                         "value": 2000,
-                        "clue": "A teenage boy spends months at sea talking his hungry roommate out of eating him in this 2012 film",
-                        "solution": "What is Life of Pi?"
+                        "clue": "A stripper marries a rich kid in Las Vegas & his parents are not thrilled in this 2024 film that won Best Picture",
+                        "solution": "What is Anora?"
+                    }
+                ]
+            },
+            {
+                "category": "Met Gala Moments",
+                "clues": [
+                    {
+                        "value": 400,
+                        "clue": "In 2021 Alexandria Ocasio-Cortez wore a white gown with this 3-word message painted on the back in red",
+                        "solution": "What is \"Tax the Rich\"?"
+                    },
+                    {
+                        "value": 800,
+                        "clue": "In 2022 Kim Kardashian borrowed the gown this actress wore to sing \"Happy Birthday\" to JFK",
+                        "solution": "Who is Marilyn Monroe?"
+                    },
+                    {
+                        "value": 1200,
+                        "clue": "Jared Leto turned up in a full-body costume of Choupette, the cat of this late designer honored by the 2023 gala",
+                        "solution": "Who is Karl Lagerfeld?",
+                        "dailyDouble": true
+                    },
+                    {
+                        "value": 1600,
+                        "clue": "Zendaya co-chaired the 2024 gala, whose \"Garden of Time\" dress code came from a short story by this \"Crash\" author",
+                        "solution": "Who is J.G. Ballard?"
+                    },
+                    {
+                        "value": 2000,
+                        "clue": "This \"Happy\" singer & Louis Vuitton menswear director co-chaired the 2025 gala celebrating Black dandyism",
+                        "solution": "Who is Pharrell Williams?"
+                    }
+                ]
+            },
+            {
+                "category": "Reality Check",
+                "clues": [
+                    {
+                        "value": 400,
+                        "clue": "Ariana Madix found out about Tom Sandoval's affair with Raquel Leviss in 2023's \"Scandoval\" on this Bravo show",
+                        "solution": "What is Vanderpump Rules?"
+                    },
+                    {
+                        "value": 800,
+                        "clue": "Singles get engaged sight unseen, talking only through the walls of separate \"pods\", on this Netflix hit",
+                        "solution": "What is Love Is Blind?"
+                    },
+                    {
+                        "value": 1200,
+                        "clue": "Alan Cumming hosts this Peacock competition in a Scottish castle, where the \"faithful\" try to banish secret backstabbers",
+                        "solution": "What is The Traitors?"
+                    },
+                    {
+                        "value": 1600,
+                        "clue": "Gerry Turner, 72, was the first lead of this ABC dating spinoff in 2023",
+                        "solution": "What is The Golden Bachelor?"
+                    },
+                    {
+                        "value": 2000,
+                        "clue": "Serena & Kordell won season 6 of this Peacock dating show, a summer 2024 phenomenon filmed in Fiji",
+                        "solution": "What is Love Island USA?"
+                    }
+                ]
+            },
+            {
+                "category": "Put a Ring on It",
+                "clues": [
+                    {
+                        "value": 400,
+                        "clue": "In 2025 Taylor Swift announced her engagement to this Kansas City Chiefs tight end",
+                        "solution": "Who is Travis Kelce?"
+                    },
+                    {
+                        "value": 800,
+                        "clue": "Zendaya debuted an engagement ring at the 2025 Golden Globes; her fiancé is this \"Spider-Man\" co-star",
+                        "solution": "Who is Tom Holland?"
+                    },
+                    {
+                        "value": 1200,
+                        "clue": "Selena Gomez married this music producer in Santa Barbara in 2025",
+                        "solution": "Who is Benny Blanco?"
+                    },
+                    {
+                        "value": 1600,
+                        "clue": "Kylie Jenner has been dating this star of \"Dune\" & \"A Complete Unknown\" since 2023",
+                        "solution": "Who is Timothée Chalamet?"
+                    },
+                    {
+                        "value": 2000,
+                        "clue": "In 2025 Dua Lipa confirmed her engagement to this British star of \"Masters of the Air\"",
+                        "solution": "Who is Callum Turner?"
                     }
                 ]
             },
@@ -245,132 +336,41 @@
                 ]
             },
             {
-                "category": "Fashion Statements",
-                "clues": [
-                    {
-                        "value": 400,
-                        "clue": "In 1971 a Portland State student was paid $35 to design this company's swoosh",
-                        "solution": "What is Nike?"
-                    },
-                    {
-                        "value": 800,
-                        "clue": "This French designer's red-soled heels are so iconic that the red sole is trademarked",
-                        "solution": "Who is Christian Louboutin?"
-                    },
-                    {
-                        "value": 1200,
-                        "clue": "Kanye West's sneaker line with Adidas went by this name",
-                        "solution": "What is Yeezy?",
-                        "dailyDouble": true
-                    },
-                    {
-                        "value": 1600,
-                        "clue": "Paris Hilton & Nicole Richie paired these shaggy sheepskin boots with miniskirts in the 2000s",
-                        "solution": "What are Uggs?"
-                    },
-                    {
-                        "value": 2000,
-                        "clue": "The Birkin bag, named for singer Jane Birkin, comes from this French fashion house",
-                        "solution": "What is Hermès?"
-                    }
-                ]
-            },
-            {
-                "category": "Reality Check",
-                "clues": [
-                    {
-                        "value": 400,
-                        "clue": "Castaways on this CBS show vote one another off at tribal council",
-                        "solution": "What is Survivor?"
-                    },
-                    {
-                        "value": 800,
-                        "clue": "Bravo's \"Real Housewives\" franchise began in 2006 in this Southern California county",
-                        "solution": "What is Orange County?"
-                    },
-                    {
-                        "value": 1200,
-                        "clue": "Singles get engaged sight unseen, talking only through the walls of separate \"pods\", on this Netflix hit",
-                        "solution": "What is Love Is Blind?"
-                    },
-                    {
-                        "value": 1600,
-                        "clue": "Simon Cowell, Paula Abdul & Randy Jackson judged the first season of this singing competition in 2002",
-                        "solution": "What is American Idol?"
-                    },
-                    {
-                        "value": 2000,
-                        "clue": "In 1992 this MTV series began telling \"the true story of 7 strangers\" picked to live in a house",
-                        "solution": "What is The Real World?"
-                    }
-                ]
-            },
-            {
-                "category": "Ship Names",
-                "clues": [
-                    {
-                        "value": 400,
-                        "clue": "Ben Affleck & Jennifer Lopez earned this tabloid nickname in 2002, then revived it by marrying in 2022",
-                        "solution": "What is Bennifer?"
-                    },
-                    {
-                        "value": 800,
-                        "clue": "Brad Pitt & Angelina Jolie, who fell for each other making \"Mr. & Mrs. Smith\", became this",
-                        "solution": "What is Brangelina?"
-                    },
-                    {
-                        "value": 1200,
-                        "clue": "Tom Cruise jumped on Oprah's couch over Katie Holmes, the other half of this couple",
-                        "solution": "What is TomKat?"
-                    },
-                    {
-                        "value": 1600,
-                        "clue": "Kim Kardashian & Kanye West married in Florence in 2014 as this 5-letter tabloid couple",
-                        "solution": "What is Kimye?"
-                    },
-                    {
-                        "value": 2000,
-                        "clue": "Blink-182 drummer Travis Barker & Kourtney Kardashian go by this ship name",
-                        "solution": "What is Kravis?"
-                    }
-                ]
-            },
-            {
                 "category": "Before & After",
                 "clues": [
                     {
                         "value": 400,
-                        "clue": "The Dunder Mifflin mockumentary that's also Mike Judge's 1999 comedy about TPS reports",
-                        "solution": "What is The Office Space?"
+                        "clue": "Netflix's deadly-children's-games drama that's also HBO's saga of the Seven Kingdoms",
+                        "solution": "What is Squid Game of Thrones?"
                     },
                     {
                         "value": 800,
-                        "clue": "Woody & Buzz's 1995 Pixar debut that's also a 2013 One Direction ballad",
-                        "solution": "What is Toy Story of My Life?"
+                        "clue": "Belly's love-triangle drama on Prime Video that's also the 2010s Freeform mystery about \"A\"",
+                        "solution": "What is The Summer I Turned Pretty Little Liars?"
                     },
                     {
                         "value": 1200,
-                        "clue": "Walter White's meth-cooking drama that's also Taylor Swift's 2015 single about a feud",
-                        "solution": "What is Breaking Bad Blood?"
+                        "clue": "HBO's zombie-fungus drama that's also a celebrity gossip magazine",
+                        "solution": "What is The Last of Us Weekly?"
                     },
                     {
                         "value": 1600,
-                        "clue": "Tina Fey's 2004 high school comedy that's also Cyndi Lauper's 1983 anthem",
+                        "clue": "Reneé Rapp's 2024 movie musical about the Plastics that's also Cyndi Lauper's 1983 anthem",
                         "solution": "What is Mean Girls Just Want to Have Fun?",
                         "dailyDouble": true
                     },
                     {
                         "value": 2000,
-                        "clue": "Shonda Rhimes' Seattle hospital drama that's also a 2023 French courtroom film that won an Oscar for its screenplay",
-                        "solution": "What is Grey's Anatomy of a Fall?"
+                        "clue": "Michelle Yeoh's 2022 multiverse movie that's also Quentin Tarantino's 2019 film about Rick Dalton",
+                        "solution": "What is Everything Everywhere All at Once Upon a Time in Hollywood?"
                     }
                 ]
             }
         ],
         "final": {
-            "category": "Word Origins",
-            "clue": "Decades before the internet ran with it, this evolutionary biologist coined the word \"meme\" in his 1976 book \"The Selfish Gene\"",
-            "solution": "Who is Richard Dawkins?"
+            "category": "Animated Hits",
+            "clue": "In 2025 this film became Netflix's most-watched movie ever, & its song \"Golden\" hit No. 1 on the Billboard Hot 100",
+            "solution": "What is KPop Demon Hunters?"
         }
     }
 }
