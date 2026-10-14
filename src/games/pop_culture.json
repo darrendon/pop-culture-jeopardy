@@ -71,8 +71,8 @@
                     },
                     {
                         "value": 400,
-                        "clue": "Seismologists compared the shaking at Taylor Swift's 2023 Seattle shows to an earthquake of this magnitude, dubbing it the \"Swift Quake\"",
-                        "solution": "What is 2.3?"
+                        "clue": "Lumen Field in this city was the location of \"Swift Quake,\" an earthquake caused by Taylor Swift fans, obviously",
+                        "solution": "What is Seattle?"
                     },
                     {
                         "value": 600,
@@ -111,7 +111,7 @@
                     },
                     {
                         "value": 800,
-                        "clue": "Serena Williams crip-walked onstage as Kendrick Lamar performed this Drake diss at the 2025 Super Bowl",
+                        "clue": "Serena Williams crip-walked onstage as Kendrick Lamar performed this Drake diss track at the 2025 Super Bowl",
                         "solution": "What is \"Not Like Us\"?",
                         "dailyDouble": true
                     },
@@ -177,8 +177,8 @@
                     },
                     {
                         "value": 1000,
-                        "clue": "J.J. Evans made \"Dy-no-mite!\" a national catchphrase on this '70s sitcom",
-                        "solution": "What is Good Times?"
+                        "clue": "\"Is that your final answer?\" became a national catchphrase thanks to this original host of \"Who Wants to Be a Millionaire\"",
+                        "solution": "Who is Regis Philbin?"
                     }
                 ]
             }
@@ -229,9 +229,8 @@
                     },
                     {
                         "value": 1200,
-                        "clue": "The Met Gala is the annual fundraiser for this department of the Metropolitan Museum of Art",
-                        "solution": "What is the Costume Institute?",
-                        "dailyDouble": true
+                        "clue": "Fashion's biggest night is traditionally held on the first Monday of this month",
+                        "solution": "What is May?"
                     },
                     {
                         "value": 1600,
@@ -250,8 +249,8 @@
                 "clues": [
                     {
                         "value": 400,
-                        "clue": "\"Scandoval\" erupted in 2023 when Ariana Madix discovered this \"Vanderpump Rules\" star's affair with Raquel Leviss",
-                        "solution": "Who is Tom Sandoval?"
+                        "clue": "1,000 contestants battled for a record $5 million prize on \"Beast Games\", this YouTuber's Prime Video competition",
+                        "solution": "Who is MrBeast?"
                     },
                     {
                         "value": 800,
@@ -266,7 +265,8 @@
                     {
                         "value": 1600,
                         "clue": "Gerry Turner, 72, was the first lead of this ABC dating spinoff in 2023",
-                        "solution": "What is The Golden Bachelor?"
+                        "solution": "What is The Golden Bachelor?",
+                        "dailyDouble": true
                     },
                     {
                         "value": 2000,
