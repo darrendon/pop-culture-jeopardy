@@ -126,7 +126,7 @@ td.board-clue {
   min-height: 0;
   box-sizing: border-box;
   padding: 3vh 6vw;
-  overflow: hidden;
+  overflow: auto;
 }
 
 .final-category {
