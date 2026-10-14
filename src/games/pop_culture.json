@@ -2,62 +2,62 @@
     "game": {
         "single": [
             {
-                "category": "What's in a Band Name?",
+                "category": "Say the Line!",
                 "clues": [
                     {
                         "value": 200,
-                        "clue": "This Liverpool group's name is a beetle pun with a nod to the \"beat\" music of the day",
-                        "solution": "What is the Beatles?"
+                        "clue": "\"How you doin'?\" was Joey Tribbiani's go-to pickup line on this NBC sitcom",
+                        "solution": "What is Friends?"
                     },
                     {
                         "value": 400,
-                        "clue": "The Who's Keith Moon supposedly said a new supergroup would go over like a lead balloon, inspiring this band's name",
-                        "solution": "What is Led Zeppelin?"
+                        "clue": "Sheldon Cooper shouted \"Bazinga!\" whenever he pulled off a prank on this CBS sitcom",
+                        "solution": "What is The Big Bang Theory?"
                     },
                     {
                         "value": 600,
-                        "clue": "This \"Creep\" band took its name from a song on Talking Heads' 1986 album \"True Stories\"",
-                        "solution": "What is Radiohead?"
+                        "clue": "Barney Stinson liked to call things \"legen—wait for it—dary\" on this sitcom",
+                        "solution": "What is How I Met Your Mother?"
                     },
                     {
                         "value": 800,
-                        "clue": "Durand Durand, a mad scientist in Jane Fonda's \"Barbarella\", lent his name to this \"Hungry Like the Wolf\" band",
-                        "solution": "What is Duran Duran?"
+                        "clue": "Steve Urkel asked \"Did I do that?\" after every disaster on this '90s sitcom",
+                        "solution": "What is Family Matters?"
                     },
                     {
                         "value": 1000,
-                        "clue": "Radioactive Man's sidekick on \"The Simpsons\" gave his name to this \"Sugar, We're Goin Down\" band",
-                        "solution": "What is Fall Out Boy?"
+                        "clue": "J.J. Evans made \"Dy-no-mite!\" a national catchphrase on this '70s sitcom",
+                        "solution": "What is Good Times?"
                     }
                 ]
             },
             {
-                "category": "Fast-Food Lore",
+                "category": "Mascot Madness",
                 "clues": [
                     {
                         "value": 200,
-                        "clue": "Founder S. Truett Cathy wanted his workers to have a day of rest, so this chicken chain closes on Sundays",
-                        "solution": "What is Chick-fil-A?"
+                        "clue": "Tony the Tiger insists this cereal is \"Gr-r-reat!\"",
+                        "solution": "What is Frosted Flakes?"
                     },
                     {
                         "value": 400,
-                        "clue": "Mountain Dew's teal Baja Blast flavor debuted in 2004 as an exclusive at this chain",
-                        "solution": "What is Taco Bell?"
+                        "clue": "The Kool-Aid Man bursts through walls shouting this 2-word catchphrase",
+                        "solution": "What is \"Oh, yeah!\"?"
                     },
                     {
                         "value": 600,
-                        "clue": "The ball, the bell, the boot & the bone are the 4 official shapes of these",
-                        "solution": "What are Chicken McNuggets?"
+                        "clue": "This insurance company's gecko pitches its policies with a British accent",
+                        "solution": "What is GEICO?"
                     },
                     {
                         "value": 800,
-                        "clue": "\"Animal Style\" fries are a not-so-secret menu item at this West Coast burger chain",
-                        "solution": "What is In-N-Out?"
+                        "clue": "In 2020 this snack brand \"killed off\" its monocled mascot, Mr. Peanut, ahead of the Super Bowl",
+                        "solution": "What is Planters?"
                     },
                     {
                         "value": 1000,
-                        "clue": "Melinda Lou Thomas, nicknamed Wendy, is the daughter of this fast-food founder",
-                        "solution": "Who is Dave Thomas?"
+                        "clue": "The Michelin Man's official name, taken from a Latin toast on an 1898 poster, is this",
+                        "solution": "What is Bibendum?"
                     }
                 ]
             },
@@ -276,62 +276,62 @@
                 ]
             },
             {
-                "category": "Sports on Screen",
+                "category": "Reality Check",
                 "clues": [
                     {
                         "value": 400,
-                        "clue": "This NBA legend played basketball alongside Bugs Bunny in 1996's \"Space Jam\"",
-                        "solution": "Who is Michael Jordan?"
+                        "clue": "Castaways on this CBS show vote one another off at tribal council",
+                        "solution": "What is Survivor?"
                     },
                     {
                         "value": 800,
-                        "clue": "On 2010's \"The Decision\", LeBron James said he'd take his talents to South Beach, joining this city's Heat",
-                        "solution": "What is Miami?"
+                        "clue": "Bravo's \"Real Housewives\" franchise began in 2006 in this Southern California county",
+                        "solution": "What is Orange County?"
                     },
                     {
                         "value": 1200,
-                        "clue": "Years after biting Evander Holyfield's ear, this boxer turned up with a pet tiger in \"The Hangover\"",
-                        "solution": "Who is Mike Tyson?"
+                        "clue": "Singles get engaged sight unseen, talking only through the walls of separate \"pods\", on this Netflix hit",
+                        "solution": "What is Love Is Blind?"
                     },
                     {
                         "value": 1600,
-                        "clue": "This Netflix docuseries is credited with turning millions of Americans into Formula 1 fans",
-                        "solution": "What is Drive to Survive?"
+                        "clue": "Simon Cowell, Paula Abdul & Randy Jackson judged the first season of this singing competition in 2002",
+                        "solution": "What is American Idol?"
                     },
                     {
                         "value": 2000,
-                        "clue": "LeBron James took over for Michael Jordan in this 2021 sequel",
-                        "solution": "What is Space Jam: A New Legacy?"
+                        "clue": "In 1992 this MTV series began telling \"the true story of 7 strangers\" picked to live in a house",
+                        "solution": "What is The Real World?"
                     }
                 ]
             },
             {
-                "category": "Musical Pairings",
+                "category": "Ship Names",
                 "clues": [
                     {
                         "value": 400,
-                        "clue": "Lady Gaga & Bradley Cooper won an Oscar for this song from \"A Star Is Born\"",
-                        "solution": "What is \"Shallow\"?"
+                        "clue": "Ben Affleck & Jennifer Lopez earned this tabloid nickname in 2002, then revived it by marrying in 2022",
+                        "solution": "What is Bennifer?"
                     },
                     {
                         "value": 800,
-                        "clue": "A Billy Ray Cyrus remix helped this Lil Nas X song spend a record 19 weeks at No. 1",
-                        "solution": "What is \"Old Town Road\"?"
+                        "clue": "Brad Pitt & Angelina Jolie, who fell for each other making \"Mr. & Mrs. Smith\", became this",
+                        "solution": "What is Brangelina?"
                     },
                     {
                         "value": 1200,
-                        "clue": "Queen teamed up with this \"Space Oddity\" singer on \"Under Pressure\"",
-                        "solution": "Who is David Bowie?"
+                        "clue": "Tom Cruise jumped on Oprah's couch over Katie Holmes, the other half of this couple",
+                        "solution": "What is TomKat?"
                     },
                     {
                         "value": 1600,
-                        "clue": "Christina Aguilera, Lil' Kim, Mýa & Pink covered this Patti LaBelle hit for \"Moulin Rouge!\"",
-                        "solution": "What is \"Lady Marmalade\"?"
+                        "clue": "Kim Kardashian & Kanye West married in Florence in 2014 as this 5-letter tabloid couple",
+                        "solution": "What is Kimye?"
                     },
                     {
                         "value": 2000,
-                        "clue": "Elton John & Kiki Dee topped the charts in 1976 with this duet",
-                        "solution": "What is \"Don't Go Breaking My Heart\"?"
+                        "clue": "Blink-182 drummer Travis Barker & Kourtney Kardashian go by this ship name",
+                        "solution": "What is Kravis?"
                     }
                 ]
             },
