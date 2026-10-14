@@ -11,7 +11,7 @@
                     },
                     {
                         "value": 400,
-                        "clue": "Dictionary.com's 2024 word of the year, it took off when Jools Lebron described her workday look as \"very ___, very mindful\"",
+                        "clue": "This Dictionary.com 2024 word of the year took off when Jools Lebron described her workday look as \"very ___, very mindful\"",
                         "solution": "What is demure?"
                     },
                     {
@@ -81,12 +81,12 @@
                     },
                     {
                         "value": 800,
-                        "clue": "With \"Cowboy Carter,\" she became the first Black woman to win the Grammy for Best Country Album",
+                        "clue": "With \"Cowboy Carter,\" this singer became the first Black woman to win the Grammy for Best Country Album",
                         "solution": "Who is Beyoncé?"
                     },
                     {
                         "value": 1000,
-                        "clue": "The \"Good Luck, Babe!\" & \"Hot to Go!\" singer won Best New Artist at the 2025 Grammys",
+                        "clue": "This \"Good Luck, Babe!\" & \"Hot to Go!\" singer won Best New Artist at the 2025 Grammys",
                         "solution": "Who is Chappell Roan?"
                     }
                 ]
@@ -162,7 +162,7 @@
                     },
                     {
                         "value": 400,
-                        "clue": "Sheldon Cooper's 3-syllable gotcha on \"The Big Bang Theory\"",
+                        "clue": "Sheldon Cooper yelled this 3-syllable word on \"The Big Bang Theory\" whenever he pulled a prank",
                         "solution": "What is \"Bazinga!\"?"
                     },
                     {
@@ -369,7 +369,7 @@
         ],
         "final": {
             "category": "Words of the Year",
-            "clue": "Oxford's 2024 word of the year, it's what doomscrolling junk content supposedly does to your mind, though Thoreau used the term back in 1854",
+            "clue": "Oxford's 2024 word of the year, this term describes what doomscrolling junk content supposedly does to your mind, though Thoreau used it back in 1854",
             "solution": "What is brain rot?"
         }
     }
