@@ -1,0 +1,376 @@
+{
+    "game": {
+        "single": [
+            {
+                "category": "What's in a Band Name?",
+                "clues": [
+                    {
+                        "value": 200,
+                        "clue": "Stefani Germanotta borrowed her stage name from Queen's song \"Radio Ga Ga\" and became this pop star",
+                        "solution": "Who is Lady Gaga?"
+                    },
+                    {
+                        "value": 400,
+                        "clue": "Keith Moon supposedly joked that a new supergroup would go over like a lead balloon, giving this band its name",
+                        "solution": "What is Led Zeppelin?"
+                    },
+                    {
+                        "value": 600,
+                        "clue": "This Oxfordshire band named itself after a Talking Heads song from the 1986 album \"True Stories\"",
+                        "solution": "What is Radiohead?"
+                    },
+                    {
+                        "value": 800,
+                        "clue": "An evil scientist in Jane Fonda's 1968 sci-fi film \"Barbarella\" gave this Birmingham synth-pop group its name",
+                        "solution": "What is Duran Duran?"
+                    },
+                    {
+                        "value": 1000,
+                        "clue": "This Chicago-area pop-punk band took its name from Radioactive Man's sidekick on \"The Simpsons\"",
+                        "solution": "What is Fall Out Boy?"
+                    }
+                ]
+            },
+            {
+                "category": "Fast-Food Lore",
+                "clues": [
+                    {
+                        "value": 200,
+                        "clue": "Founder S. Truett Cathy wanted employees to have a day of rest, so this chicken chain closes on Sundays",
+                        "solution": "What is Chick-fil-A?"
+                    },
+                    {
+                        "value": 400,
+                        "clue": "Mountain Dew's teal Baja Blast flavor was created in 2004 to be sold only at this chain",
+                        "solution": "What is Taco Bell?"
+                    },
+                    {
+                        "value": 600,
+                        "clue": "These menu items come in four official shapes: the ball, the bell, the boot and the bone",
+                        "solution": "What are Chicken McNuggets?"
+                    },
+                    {
+                        "value": 800,
+                        "clue": "Order a burger \"Animal Style\" off this West Coast chain's not-so-secret menu",
+                        "solution": "What is In-N-Out?"
+                    },
+                    {
+                        "value": 1000,
+                        "clue": "Wendy's is named for the founder's daughter; give the founder's first and last name",
+                        "solution": "Who is Dave Thomas?"
+                    }
+                ]
+            },
+            {
+                "category": "Halftime Heroes",
+                "clues": [
+                    {
+                        "value": 200,
+                        "clue": "A backup dancer known as \"Left Shark\" upstaged her at the 2015 Super Bowl",
+                        "solution": "Who is Katy Perry?"
+                    },
+                    {
+                        "value": 400,
+                        "clue": "Her 2004 halftime set is remembered almost entirely for a \"wardrobe malfunction\" alongside Justin Timberlake",
+                        "solution": "Who is Janet Jackson?"
+                    },
+                    {
+                        "value": 600,
+                        "clue": "She revealed her second pregnancy onstage during the 2023 halftime show",
+                        "solution": "Who is Rihanna?"
+                    },
+                    {
+                        "value": 800,
+                        "clue": "In 2007, he played \"Purple Rain\" during an actual downpour in Miami",
+                        "solution": "Who is Prince?",
+                        "dailyDouble": true
+                    },
+                    {
+                        "value": 1000,
+                        "clue": "In 2025, he performed his Drake diss track \"Not Like Us\" on the Super Bowl stage in New Orleans",
+                        "solution": "Who is Kendrick Lamar?"
+                    }
+                ]
+            },
+            {
+                "category": "Internet History",
+                "clues": [
+                    {
+                        "value": 200,
+                        "clue": "Tricking someone into clicking Rick Astley's \"Never Gonna Give You Up\" is known as this",
+                        "solution": "What is Rickrolling?"
+                    },
+                    {
+                        "value": 400,
+                        "clue": "In 2016, players crowded parks and sidewalks trying to catch Pikachu in this augmented-reality game",
+                        "solution": "What is Pokémon Go?"
+                    },
+                    {
+                        "value": 600,
+                        "clue": "The New York Times bought this once-a-day word game in 2022",
+                        "solution": "What is Wordle?"
+                    },
+                    {
+                        "value": 800,
+                        "clue": "At the height of its popularity in 2014, its creator pulled this pipe-dodging mobile game from app stores",
+                        "solution": "What is Flappy Bird?"
+                    },
+                    {
+                        "value": 1000,
+                        "clue": "A man turning to check out a passerby while his girlfriend glares became this stock-photo meme in 2017",
+                        "solution": "What is Distracted Boyfriend?"
+                    }
+                ]
+            },
+            {
+                "category": "It's in the \"Book\"",
+                "clues": [
+                    {
+                        "value": 200,
+                        "clue": "Mark Zuckerberg launched it from his Harvard dorm room in 2004",
+                        "solution": "What is Facebook?"
+                    },
+                    {
+                        "value": 400,
+                        "clue": "Ryan Gosling and Rachel McAdams kiss in the rain in this 2004 Nicholas Sparks adaptation",
+                        "solution": "What is The Notebook?"
+                    },
+                    {
+                        "value": 600,
+                        "clue": "Baloo sings \"The Bare Necessities\" in this 1967 Disney film",
+                        "solution": "What is The Jungle Book?"
+                    },
+                    {
+                        "value": 800,
+                        "clue": "Olivia Wilde made her directing debut with this 2019 comedy about two overachievers' last night of high school",
+                        "solution": "What is Booksmart?"
+                    },
+                    {
+                        "value": 1000,
+                        "clue": "In 2006, Apple retired the iBook and replaced it with this laptop line",
+                        "solution": "What is the MacBook?"
+                    }
+                ]
+            },
+            {
+                "category": "Broadway Bound",
+                "clues": [
+                    {
+                        "value": 200,
+                        "clue": "Lin-Manuel Miranda picked up Ron Chernow's biography of a Founding Father on vacation, and it inspired this musical",
+                        "solution": "What is Hamilton?"
+                    },
+                    {
+                        "value": 400,
+                        "clue": "This musical tells the untold story of the witches of Oz",
+                        "solution": "What is Wicked?"
+                    },
+                    {
+                        "value": 600,
+                        "clue": "Tina Fey adapted her own 2004 movie into this musical, where on Wednesdays they still wear pink",
+                        "solution": "What is Mean Girls?"
+                    },
+                    {
+                        "value": 800,
+                        "clue": "Julie Taymor designed the life-size animal puppets that parade down the aisles in this Disney show's opening number",
+                        "solution": "What is The Lion King?"
+                    },
+                    {
+                        "value": 1000,
+                        "clue": "The wives of Henry VIII reunite as a pop girl group in this musical",
+                        "solution": "What is Six?"
+                    }
+                ]
+            }
+        ],
+        "double": [
+            {
+                "category": "Movie Plots, Poorly Explained",
+                "clues": [
+                    {
+                        "value": 400,
+                        "clue": "A girl kills the first person she meets in a strange land, then teams up with three strangers to kill again",
+                        "solution": "What is The Wizard of Oz?"
+                    },
+                    {
+                        "value": 800,
+                        "clue": "A widower lets a kid he barely knows into his house, then flies it to South America",
+                        "solution": "What is Up?"
+                    },
+                    {
+                        "value": 1200,
+                        "clue": "A teenager goes back in time, and his own mom develops a crush on him",
+                        "solution": "What is Back to the Future?"
+                    },
+                    {
+                        "value": 1600,
+                        "clue": "A businessman hires a crew to break into another man's sleep and leave an idea behind",
+                        "solution": "What is Inception?"
+                    },
+                    {
+                        "value": 2000,
+                        "clue": "Stranded at sea for months, a teenage boy convinces his hungry roommate not to eat him",
+                        "solution": "What is Life of Pi?"
+                    }
+                ]
+            },
+            {
+                "category": "Video Game Villains",
+                "clues": [
+                    {
+                        "value": 400,
+                        "clue": "This spiky-shelled Koopa king keeps kidnapping Princess Peach",
+                        "solution": "Who is Bowser?"
+                    },
+                    {
+                        "value": 800,
+                        "clue": "Sonic's nemesis, Dr. Ivo Robotnik, is better known by this nickname",
+                        "solution": "Who is Dr. Eggman?"
+                    },
+                    {
+                        "value": 1200,
+                        "clue": "In \"The Legend of Zelda,\" Link's arch-enemy often takes the form of this pig-like beast",
+                        "solution": "Who is Ganon?"
+                    },
+                    {
+                        "value": 1600,
+                        "clue": "Players of \"Portal\" are taunted by this passive-aggressive AI, who promises them cake",
+                        "solution": "Who is GLaDOS?"
+                    },
+                    {
+                        "value": 2000,
+                        "clue": "In the \"Halo\" series, a parasitic alien enemy shares its name with this biblical disaster",
+                        "solution": "What is the Flood?"
+                    }
+                ]
+            },
+            {
+                "category": "Fashion Statements",
+                "clues": [
+                    {
+                        "value": 400,
+                        "clue": "A Portland State student was paid $35 in 1971 to design this brand's \"Swoosh\"",
+                        "solution": "What is Nike?"
+                    },
+                    {
+                        "value": 800,
+                        "clue": "This designer's red-soled heels are so iconic that the red sole is trademarked",
+                        "solution": "Who is Christian Louboutin?"
+                    },
+                    {
+                        "value": 1200,
+                        "clue": "Kanye West's sneaker line with Adidas was sold under this name",
+                        "solution": "What is Yeezy?",
+                        "dailyDouble": true
+                    },
+                    {
+                        "value": 1600,
+                        "clue": "Paris Hilton and Nicole Richie paired these sheepskin boots with miniskirts in the 2000s",
+                        "solution": "What are Uggs?"
+                    },
+                    {
+                        "value": 2000,
+                        "clue": "The Birkin bag, named for singer Jane Birkin, comes from this French fashion house",
+                        "solution": "What is Hermès?"
+                    }
+                ]
+            },
+            {
+                "category": "Sports on Screen",
+                "clues": [
+                    {
+                        "value": 400,
+                        "clue": "He played basketball alongside Bugs Bunny in 1996's \"Space Jam\"",
+                        "solution": "Who is Michael Jordan?"
+                    },
+                    {
+                        "value": 800,
+                        "clue": "In 2010, LeBron James said on live TV that he'd take his talents to this city's South Beach",
+                        "solution": "What is Miami?"
+                    },
+                    {
+                        "value": 1200,
+                        "clue": "He bit Evander Holyfield's ear in 1997 and later turned up with a tiger in \"The Hangover\"",
+                        "solution": "Who is Mike Tyson?"
+                    },
+                    {
+                        "value": 1600,
+                        "clue": "This Netflix docuseries is widely credited with making American fans care about Formula 1",
+                        "solution": "What is Drive to Survive?"
+                    },
+                    {
+                        "value": 2000,
+                        "clue": "LeBron took over the \"Space Jam\" franchise in 2021 with a sequel given this subtitle",
+                        "solution": "What is A New Legacy?"
+                    }
+                ]
+            },
+            {
+                "category": "Musical Pairings",
+                "clues": [
+                    {
+                        "value": 400,
+                        "clue": "Lady Gaga and Bradley Cooper won an Oscar for this song from \"A Star Is Born\"",
+                        "solution": "What is \"Shallow\"?"
+                    },
+                    {
+                        "value": 800,
+                        "clue": "Billy Ray Cyrus hopped on the remix of this Lil Nas X song, which spent a record 19 weeks at No. 1",
+                        "solution": "What is \"Old Town Road\"?"
+                    },
+                    {
+                        "value": 1200,
+                        "clue": "Queen recorded \"Under Pressure\" with this rock star",
+                        "solution": "Who is David Bowie?"
+                    },
+                    {
+                        "value": 1600,
+                        "clue": "Christina Aguilera, Lil' Kim, Mýa and Pink teamed up on this Patti LaBelle cover for \"Moulin Rouge!\"",
+                        "solution": "What is \"Lady Marmalade\"?"
+                    },
+                    {
+                        "value": 2000,
+                        "clue": "Elton John and Kiki Dee topped the charts in 1976 with this duet",
+                        "solution": "What is \"Don't Go Breaking My Heart\"?"
+                    }
+                ]
+            },
+            {
+                "category": "Before & After",
+                "clues": [
+                    {
+                        "value": 400,
+                        "clue": "Michael Scott's mockumentary sitcom meets Mike Judge's 1999 movie about TPS reports",
+                        "solution": "What is The Office Space?"
+                    },
+                    {
+                        "value": 800,
+                        "clue": "Woody and Buzz's Pixar film meets a 2013 One Direction ballad",
+                        "solution": "What is Toy Story of My Life?"
+                    },
+                    {
+                        "value": 1200,
+                        "clue": "Walter White's meth drama meets Taylor Swift's 2015 single about a feud",
+                        "solution": "What is Breaking Bad Blood?"
+                    },
+                    {
+                        "value": 1600,
+                        "clue": "Tina Fey's 2004 high school comedy meets Cyndi Lauper's 1983 anthem",
+                        "solution": "What is Mean Girls Just Want to Have Fun?",
+                        "dailyDouble": true
+                    },
+                    {
+                        "value": 2000,
+                        "clue": "Shonda Rhimes' hospital drama meets a 2023 French courtroom film that won the Oscar for Best Original Screenplay",
+                        "solution": "What is Grey's Anatomy of a Fall?"
+                    }
+                ]
+            }
+        ],
+        "final": {
+            "category": "Word Origins",
+            "clue": "Long before the internet existed, this evolutionary biologist coined the word \"meme\" in his 1976 book \"The Selfish Gene.\"",
+            "solution": "Who is Richard Dawkins?"
+        }
+    }
+}
