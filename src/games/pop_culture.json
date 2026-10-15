@@ -11,7 +11,7 @@
                     },
                     {
                         "value": 400,
-                        "clue": "This Dictionary.com 2024 word of the year took off when Jools Lebron described her workday look as \"very ___, very mindful\"",
+                        "clue": "This Dictionary.com 2024 word of the year took off when Jools Lebron described her workday look as \"very [this], very mindful\"",
                         "solution": "What is demure?"
                     },
                     {
@@ -81,8 +81,8 @@
                     },
                     {
                         "value": 800,
-                        "clue": "With \"Cowboy Carter,\" this singer became the first Black woman to win the Grammy for Best Country Album",
-                        "solution": "Who is Beyoncé?"
+                        "clue": "Beyoncé became the first Black woman to win the Grammy for Best Country Album for this alliterative album title",
+                        "solution": "What is Cowboy Carter?"
                     },
                     {
                         "value": 1000,
@@ -153,17 +153,17 @@
                 ]
             },
             {
-                "category": "Say the Line!",
+                "category": "Catchphrases",
                 "clues": [
                     {
                         "value": 200,
-                        "clue": "\"How you doin'?\" was Joey Tribbiani's go-to pickup line on this NBC sitcom",
-                        "solution": "What is Friends?"
+                        "clue": "Sheldon Cooper yelled this 3-syllable word on \"The Big Bang Theory\" whenever he pulled a prank",
+                        "solution": "What is \"Bazinga!\"?"
                     },
                     {
                         "value": 400,
-                        "clue": "Sheldon Cooper yelled this 3-syllable word on \"The Big Bang Theory\" whenever he pulled a prank",
-                        "solution": "What is \"Bazinga!\"?"
+                        "clue": "Before hitting his Five Knuckle Shuffle, John Cena waves a hand in front of his face & taunts opponents with this 4-word phrase",
+                        "solution": "What is \"You can't see me\"?"
                     },
                     {
                         "value": 600,
@@ -209,7 +209,7 @@
                     },
                     {
                         "value": 2000,
-                        "clue": "A pretend pirate gets lost in his own furniture store in this 2026 film",
+                        "clue": "A furniture store owner goes to therapy & gets lost in his store's basement in this 2026 film",
                         "solution": "What is Backrooms?"
                     }
                 ]
@@ -229,7 +229,7 @@
                     },
                     {
                         "value": 1200,
-                        "clue": "Fashion's biggest night is traditionally held on the first Monday of this month",
+                        "clue": "The Met Gala is traditionally held on the first Monday of this month",
                         "solution": "What is May?"
                     },
                     {
@@ -270,8 +270,8 @@
                     },
                     {
                         "value": 2000,
-                        "clue": "Chrishell Stause & Mary Fitzgerald sell L.A. mansions for this brokerage on Netflix's \"Selling Sunset\"",
-                        "solution": "What is the Oppenheim Group?"
+                        "clue": "Each week on \"Big Brother,\" the winner of a competition earns this title & the power to nominate 2 players for eviction",
+                        "solution": "What is Head of Household?"
                     }
                 ]
             },
