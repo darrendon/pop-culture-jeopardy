@@ -1,0 +1,376 @@
+{
+    "game": {
+        "single": [
+            {
+                "category": "Back for More",
+                "clues": [
+                    {
+                        "value": 200,
+                        "clue": "Lindsay Lohan & Jamie Lee Curtis swapped bodies once again in this 2025 sequel",
+                        "solution": "What is \"Freakier Friday\"?"
+                    },
+                    {
+                        "value": 400,
+                        "clue": "Michael Keaton's ghoulish bio-exorcist returned in this 2024 sequel whose title repeats his name",
+                        "solution": "What is \"Beetlejuice Beetlejuice\"?"
+                    },
+                    {
+                        "value": 600,
+                        "clue": "Christopher McDonald returned as this smug golf rival in Netflix's 2025 \"Happy Gilmore 2\"",
+                        "solution": "Who is Shooter McGavin?"
+                    },
+                    {
+                        "value": 800,
+                        "clue": "Meryl Streep reprised her role as this icy Runway editor in a sequel released May 1, 2026",
+                        "solution": "Who is Miranda Priestly?"
+                    },
+                    {
+                        "value": 1000,
+                        "clue": "In \"Gladiator II\", Paul Mescal plays Lucius, the grandson of this philosopher-emperor",
+                        "solution": "Who is Marcus Aurelius?"
+                    }
+                ]
+            },
+            {
+                "category": "Pod People",
+                "clues": [
+                    {
+                        "value": 200,
+                        "clue": "In August 2025 Taylor Swift announced \"The Life of a Showgirl\" on this podcast hosted by Travis Kelce & his brother Jason",
+                        "solution": "What is \"New Heights\"?"
+                    },
+                    {
+                        "value": 400,
+                        "clue": "Alex Cooper took this podcast from Spotify to SiriusXM in a 2024 deal reportedly worth $125 million",
+                        "solution": "What is \"Call Her Daddy\"?"
+                    },
+                    {
+                        "value": 600,
+                        "clue": "Jason Bateman, Will Arnett & Sean Hayes take turns surprising the others with a mystery guest on this podcast",
+                        "solution": "What is \"SmartLess\"?"
+                    },
+                    {
+                        "value": 800,
+                        "clue": "This UFC commentator & comedian's \"Experience\" has topped Spotify's podcast charts for years",
+                        "solution": "Who is Joe Rogan?",
+                        "dailyDouble": true
+                    },
+                    {
+                        "value": 1000,
+                        "clue": "Sarah Koenig's 2014 deep dive into the case of Adnan Syed made this podcast a phenomenon",
+                        "solution": "What is \"Serial\"?"
+                    }
+                ]
+            },
+            {
+                "category": "Hoops Hype",
+                "clues": [
+                    {
+                        "value": 200,
+                        "clue": "In 2024 LeBron James & this son of his became the first father & son to play together in an NBA game",
+                        "solution": "Who is Bronny James?"
+                    },
+                    {
+                        "value": 400,
+                        "clue": "Caitlin Clark became Division I's all-time leading scorer while starring for this Big Ten school's Hawkeyes",
+                        "solution": "What is Iowa?"
+                    },
+                    {
+                        "value": 600,
+                        "clue": "LeBron once called 7-foot-4 Victor Wembanyama this, & the out-of-this-world nickname stuck",
+                        "solution": "What is an alien?"
+                    },
+                    {
+                        "value": 800,
+                        "clue": "Angel Reese calls herself the \"Bayou\" version of this famous Mattel doll",
+                        "solution": "What is Barbie?"
+                    },
+                    {
+                        "value": 1000,
+                        "clue": "In a stunning February 2025 trade, Luka Dončić left the Dallas Mavericks for this team",
+                        "solution": "What are the Los Angeles Lakers?"
+                    }
+                ]
+            },
+            {
+                "category": "'90s Nickelodeon",
+                "clues": [
+                    {
+                        "value": 200,
+                        "clue": "Tommy Pickles led a crew of crawling adventurers on this cartoon",
+                        "solution": "What is \"Rugrats\"?"
+                    },
+                    {
+                        "value": 400,
+                        "clue": "Getting covered in this green goo was the ultimate honor at the Kids' Choice Awards",
+                        "solution": "What is slime?"
+                    },
+                    {
+                        "value": 600,
+                        "clue": "Before \"Good Burger\" became a movie, it was a sketch on this show starring Kenan Thompson & Kel Mitchell",
+                        "solution": "What is \"All That\"?"
+                    },
+                    {
+                        "value": 800,
+                        "clue": "Olmec, a giant talking stone head, presided over this Kirk Fogg game show",
+                        "solution": "What is \"Legends of the Hidden Temple\"?"
+                    },
+                    {
+                        "value": 1000,
+                        "clue": "The hero of \"Hey Arnold!\" had a head shaped like this piece of sports equipment",
+                        "solution": "What is a football?"
+                    }
+                ]
+            },
+            {
+                "category": "Capes & Cowls",
+                "clues": [
+                    {
+                        "value": 200,
+                        "clue": "In James Gunn's 2025 \"Superman\", the hero's rambunctious superpowered pet is this white dog",
+                        "solution": "Who is Krypto?"
+                    },
+                    {
+                        "value": 400,
+                        "clue": "Pedro Pascal plays Reed Richards in 2025's \"First Steps\", a reboot of this superhero team",
+                        "solution": "What is the Fantastic Four?"
+                    },
+                    {
+                        "value": 600,
+                        "clue": "Ryan Reynolds & Hugh Jackman's 2024 team-up became the highest-grossing R-rated movie ever, passing \"Joker\"",
+                        "solution": "What is \"Deadpool & Wolverine\"?"
+                    },
+                    {
+                        "value": 800,
+                        "clue": "Marvel's 2025 \"Thunderbolts\" had this punctuation mark in its title, later revealed to stand for \"The New Avengers\"",
+                        "solution": "What is an asterisk?"
+                    },
+                    {
+                        "value": 1000,
+                        "clue": "Nicholas Hoult played this bald billionaire opposite David Corenswet's Man of Steel",
+                        "solution": "Who is Lex Luthor?"
+                    }
+                ]
+            },
+            {
+                "category": "Initially Speaking",
+                "clues": [
+                    {
+                        "value": 200,
+                        "clue": "Viola Davis, John Legend & Elton John have all completed this 4-letter showbiz grand slam",
+                        "solution": "What is an EGOT?"
+                    },
+                    {
+                        "value": 400,
+                        "clue": "Livestreamers who repeat canned phrases like video game background characters are doing this 3-letter kind of stream",
+                        "solution": "What is NPC?"
+                    },
+                    {
+                        "value": 600,
+                        "clue": "Fashion fans tag photos of today's look with this 4-letter hashtag",
+                        "solution": "What is #OOTD?"
+                    },
+                    {
+                        "value": 800,
+                        "clue": "Texting this 5-letter acronym means an inside joke is only for those who get it",
+                        "solution": "What is IYKYK?"
+                    },
+                    {
+                        "value": 1000,
+                        "clue": "Swifties shorten the title of her 2024 album about tortured poets to these 4 letters",
+                        "solution": "What is TTPD?"
+                    }
+                ]
+            }
+        ],
+        "double": [
+            {
+                "category": "Series Finales",
+                "clues": [
+                    {
+                        "value": 400,
+                        "clue": "The final episode of this Hawkins, Indiana, saga hit Netflix on New Year's Eve 2025 & also played in movie theaters",
+                        "solution": "What is \"Stranger Things\"?"
+                    },
+                    {
+                        "value": 800,
+                        "clue": "Netflix's sequel to \"The Karate Kid\", this series wrapped its 6th & final season in February 2025",
+                        "solution": "What is \"Cobra Kai\"?"
+                    },
+                    {
+                        "value": 1200,
+                        "clue": "The Roy siblings' fight to inherit Waystar Royco ended with this HBO drama's 2023 finale",
+                        "solution": "What is \"Succession\"?"
+                    },
+                    {
+                        "value": 1600,
+                        "clue": "\"The Crown\" ended its run in 2023 with this royal's 2005 wedding to Camilla Parker Bowles",
+                        "solution": "Who is Prince Charles (King Charles III)?"
+                    },
+                    {
+                        "value": 2000,
+                        "clue": "The 2015 \"Mad Men\" finale hints that a meditating Don Draper dreamed up this soft drink's famous \"Hilltop\" ad",
+                        "solution": "What is Coca-Cola?"
+                    }
+                ]
+            },
+            {
+                "category": "Rebrands",
+                "clues": [
+                    {
+                        "value": 400,
+                        "clue": "In 2023 Elon Musk swapped out a little blue bird & renamed this platform \"X\"",
+                        "solution": "What is Twitter?"
+                    },
+                    {
+                        "value": 800,
+                        "clue": "In 2021 Facebook's parent company renamed itself this, betting big on virtual reality",
+                        "solution": "What is Meta?"
+                    },
+                    {
+                        "value": 1200,
+                        "clue": "In August 2025 this restaurant chain brought back its \"Old Timer\" logo, leaning on a wooden cask, after fans revolted",
+                        "solution": "What is Cracker Barrel?",
+                        "dailyDouble": true
+                    },
+                    {
+                        "value": 1600,
+                        "clue": "This British luxury carmaker's 2024 rebrand ad showed models in bright colors, no cars at all & the slogan \"Copy Nothing\"",
+                        "solution": "What is Jaguar?"
+                    },
+                    {
+                        "value": 2000,
+                        "clue": "In 2020 Planters killed off this monocled mascot in a Super Bowl ad, then brought him back as a baby",
+                        "solution": "Who is Mr. Peanut?"
+                    }
+                ]
+            },
+            {
+                "category": "Food TV",
+                "clues": [
+                    {
+                        "value": 400,
+                        "clue": "Guy Fieri invites viewers to this made-up town, his nickname for anywhere delicious",
+                        "solution": "What is Flavortown?"
+                    },
+                    {
+                        "value": 800,
+                        "clue": "Getting one of these from Paul Hollywood is the ultimate compliment on \"The Great British Baking Show\"",
+                        "solution": "What is a handshake?"
+                    },
+                    {
+                        "value": 1200,
+                        "clue": "Gordon Ramsay held 2 slices of bread to a woman's ears & asked what she was; she said this",
+                        "solution": "What is an idiot sandwich?"
+                    },
+                    {
+                        "value": 1600,
+                        "clue": "\"Store-bought is fine\" is a beloved catchphrase of this Barefoot Contessa",
+                        "solution": "Who is Ina Garten?"
+                    },
+                    {
+                        "value": 2000,
+                        "clue": "Season 10 champ Kristen Kish replaced Padma Lakshmi as host of this Bravo competition in 2024",
+                        "solution": "What is \"Top Chef\"?"
+                    }
+                ]
+            },
+            {
+                "category": "'90s Movie Night",
+                "clues": [
+                    {
+                        "value": 400,
+                        "clue": "At the end of \"Titanic\", Rose drops the \"Heart of the Ocean\", a giant blue one of these, into the sea",
+                        "solution": "What is a diamond (necklace)?"
+                    },
+                    {
+                        "value": 800,
+                        "clue": "Neo must choose between a red one & a blue one of these in \"The Matrix\"",
+                        "solution": "What is a pill?"
+                    },
+                    {
+                        "value": 1200,
+                        "clue": "Harry & Marv, the bumbling burglars of \"Home Alone\", call themselves this soggy-sounding gang",
+                        "solution": "What are the Wet Bandits?"
+                    },
+                    {
+                        "value": 1600,
+                        "clue": "Alicia Silverstone's Cher Horowitz plays matchmaker in this 1995 Beverly Hills update of Jane Austen's \"Emma\"",
+                        "solution": "What is \"Clueless\"?",
+                        "dailyDouble": true
+                    },
+                    {
+                        "value": 2000,
+                        "clue": "In \"Jurassic Park\", ripples in a cup of this signal that the T. rex is approaching",
+                        "solution": "What is water?"
+                    }
+                ]
+            },
+            {
+                "category": "The Korean Wave",
+                "clues": [
+                    {
+                        "value": 400,
+                        "clue": "Rosé & Bruno Mars turned a Korean drinking game into this 2024 smash",
+                        "solution": "What is \"APT.\"?"
+                    },
+                    {
+                        "value": 800,
+                        "clue": "In 2020 this Bong Joon Ho thriller became the first non-English-language film to win Best Picture",
+                        "solution": "What is \"Parasite\"?"
+                    },
+                    {
+                        "value": 1200,
+                        "clue": "All 7 members of this K-pop group had finished South Korea's mandatory military service by June 2025",
+                        "solution": "Who is BTS?"
+                    },
+                    {
+                        "value": 1600,
+                        "clue": "In 2024 Han Kang became the first South Korean to win this prize in Literature",
+                        "solution": "What is the Nobel Prize?"
+                    },
+                    {
+                        "value": 2000,
+                        "clue": "Psy's \"Gangnam Style\" pokes fun at a ritzy district in this capital city",
+                        "solution": "What is Seoul?"
+                    }
+                ]
+            },
+            {
+                "category": "Lost in Space",
+                "clues": [
+                    {
+                        "value": 400,
+                        "clue": "Katy Perry & Gayle King blasted off in April 2025 on a rocket from this Jeff Bezos company",
+                        "solution": "What is Blue Origin?"
+                    },
+                    {
+                        "value": 800,
+                        "clue": "In 2021 this 90-year-old \"Star Trek\" captain became the oldest person to reach space at the time",
+                        "solution": "Who is William Shatner?"
+                    },
+                    {
+                        "value": 1200,
+                        "clue": "Astronauts Butch Wilmore & Suni Williams spent about 9 months in orbit after problems with this Boeing capsule",
+                        "solution": "What is Starliner?"
+                    },
+                    {
+                        "value": 1600,
+                        "clue": "Ryan Gosling plays a science teacher who wakes up alone on a spaceship in this 2026 film from Andy Weir's novel",
+                        "solution": "What is \"Project Hail Mary\"?"
+                    },
+                    {
+                        "value": 2000,
+                        "clue": "In 2018 Elon Musk launched his cherry-red one of these into space with a mannequin called \"Starman\" at the wheel",
+                        "solution": "What is a Tesla Roadster?"
+                    }
+                ]
+            }
+        ],
+        "final": {
+            "category": "Game Show Hosts",
+            "clue": "This \"Weekend Update\" anchor hosts \"Pop Culture Jeopardy!\", which premiered on Prime Video in December 2024 with teams of 3",
+            "solution": "Who is Colin Jost?"
+        }
+    }
+}

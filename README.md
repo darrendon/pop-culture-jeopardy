@@ -6,7 +6,7 @@ The site rebuilds and republishes itself on GitHub Pages whenever you change a f
 
 ## Playing
 
-Open the site, click **Episode 1** or **Episode 2** (or load any game file), pick how many teams are playing (1 to 6; it remembers your last choice), have each team write its name in a box with a finger, stylus or mouse, then click through the board. The handwritten names show on the podiums. Keyboard shortcuts for the host:
+Open the site, click **Episode 1**, **Episode 2** or **Episode 3** (or load any game file), pick how many teams are playing (1 to 6; it remembers your last choice), have each team write its name in a box with a finger, stylus or mouse, then click through the board. The handwritten names show on the podiums. Keyboard shortcuts for the host:
 
 - **Space / Enter:** reveal the next category, show the answer, or continue
 - **Escape:** go back to the board
@@ -14,7 +14,7 @@ Open the site, click **Episode 1** or **Episode 2** (or load any game file), pic
 - **T:** play the time's-up sound on an open clue (or click "Time's up")
 - **P:** start or stop the Final Jeopardy think music (or click "Play think music")
 
-You can also link straight to a game with `?game=pop_culture` (Episode 1) or `?game=pop_culture_2` (Episode 2) at the end of the site address.
+You can also link straight to a game with `?game=pop_culture` (Episode 1), `?game=pop_culture_2` (Episode 2) or `?game=pop_culture_3` (Episode 3) at the end of the site address.
 
 ## Host screen and board
 
@@ -31,7 +31,7 @@ If the board isn't open, everything still works from the host screen alone, just
 
 ## Editing the game
 
-Episode 1 lives in `src/games/pop_culture.json` and Episode 2 in `src/games/pop_culture_2.json`. Edit it on github.com with the pencil icon and commit; the site updates on its own.
+Episode 1 lives in `src/games/pop_culture.json`, Episode 2 in `src/games/pop_culture_2.json` and Episode 3 in `src/games/pop_culture_3.json`. Edit them on github.com with the pencil icon and commit; the site updates on its own.
 
 Each clue looks like this:
 

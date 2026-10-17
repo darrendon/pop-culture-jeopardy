@@ -66,6 +66,13 @@ function GameLoader(props: GameLoaderProps) {
         >
           Episode 2
         </button>
+        <button
+          onClick={() =>
+            updateGame(JSON.parse(JSON.stringify(preloadedGames.pop_culture_3)))
+          }
+        >
+          Episode 3
+        </button>
       </div>
       <p className="loader-note">or load a game file</p>
       <input
