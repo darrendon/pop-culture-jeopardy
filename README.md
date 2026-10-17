@@ -6,7 +6,7 @@ The site rebuilds and republishes itself on GitHub Pages whenever you change a f
 
 ## Playing
 
-Open the site, click **Episode 1** or **Episode 2** (or load any game file), have each of the 4 teams write their name in a box with a finger, stylus or mouse, then click through the board. The handwritten names show on the podiums. Keyboard shortcuts for the host:
+Open the site, click **Episode 1** or **Episode 2** (or load any game file), pick how many teams are playing (1 to 6; it remembers your last choice), have each team write its name in a box with a finger, stylus or mouse, then click through the board. The handwritten names show on the podiums. Keyboard shortcuts for the host:
 
 - **Space / Enter:** reveal the next category, show the answer, or continue
 - **Escape:** go back to the board

@@ -17,9 +17,40 @@
 
 .signature-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(var(--columns, 2), minmax(0, 1fr));
   gap: 3vh 3vw;
-  width: min(100%, 100vh);
+  /* Each box stays about the same size however many columns there are */
+  width: min(100%, calc(var(--columns, 2) * 42vh));
+}
+
+.team-count {
+  display: flex;
+  align-items: center;
+  gap: 0.6vw;
+  margin-bottom: 3vh;
+}
+
+.team-count-label {
+  font-family: "Swiss921", sans-serif;
+  font-size: clamp(18px, 3vh, 36px);
+  margin-right: 0.8vw;
+}
+
+.team-count button {
+  font-family: "Swiss921", sans-serif;
+  font-size: clamp(16px, 2.6vh, 30px);
+  width: clamp(36px, 5.5vh, 64px);
+  height: clamp(36px, 5.5vh, 64px);
+  border: 3px solid #c99f57;
+  border-radius: 6px;
+  background-color: #001699;
+  color: white;
+  cursor: pointer;
+}
+
+.team-count button.selected {
+  background-color: #c99f57;
+  color: black;
 }
 
 .signature-pad {
