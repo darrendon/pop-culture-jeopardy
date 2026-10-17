@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import FinalJeopardy from "./FinalJeopardy";
 import GameLoader from "./GameLoader";
@@ -15,10 +15,241 @@ import {
 } from "../types";
 import { preloadedGames } from "../util/preloaded_games";
 import { playSound, toggleMute } from "../util/sounds";
+import {
+  BoardState,
+  FinalStage,
+  IS_BOARD,
+  listen,
+  openBoardWindow,
+  send,
+} from "../util/sync";
 
 import "./App.css";
 
-function App() {
+// How the game screens are drawn: on the host's laptop, or on the TV board
+interface ViewMode {
+  display: boolean; // TV board: no controls
+  hostView: boolean; // host screen with the board open: show responses early
+}
+
+interface Handlers {
+  backToBoard: () => void;
+  categoryShown: () => void;
+  chooseClue: (categoryIndex: number, clueIndex: number) => void;
+  setSolution: (shown: boolean) => void;
+  setDailyDoubleShown: (shown: boolean) => void;
+  setFinalStage: (stage: FinalStage) => void;
+  updateScore: (i: number, value: number, correct: boolean) => void;
+  proceedToDouble: () => void;
+  proceedToFinal: () => void;
+  finishGame: () => void;
+  downloadGame: () => void;
+}
+
+const noop = () => {};
+const BOARD_HANDLERS: Handlers = {
+  backToBoard: noop,
+  categoryShown: noop,
+  chooseClue: noop,
+  setSolution: noop,
+  setDailyDoubleShown: noop,
+  setFinalStage: noop,
+  updateScore: noop,
+  proceedToDouble: noop,
+  proceedToFinal: noop,
+  finishGame: noop,
+  downloadGame: noop,
+};
+
+function allChosen(board: GameRound): boolean {
+  return board.every((category) =>
+    category.clues.every((clue) => clue.chosen !== undefined)
+  );
+}
+
+// The round, clue, Final Jeopardy and results screens, shared by both windows
+function renderGameScreen(
+  state: BoardState,
+  mode: ViewMode,
+  on: Handlers
+): JSX.Element {
+  const { game, players, round } = state;
+  if (game === null) return <div>Error: No game loaded.</div>;
+  const { display, hostView } = mode;
+
+  if (round === "single" || round === "double") {
+    const board = game[round];
+    if (board === undefined) {
+      return <div>Error: Game board not found.</div>;
+    }
+    const onBoard =
+      state.currentCategoryIndex === null && state.currentClueIndex === null;
+
+    // See if we should be able to proceed to Double or Final Jeopardy
+    const roundDone = allChosen(board);
+    let allowProceedToDouble = round === "single" && roundDone;
+    let allowProceedToFinal = round === "double" && roundDone;
+    // Allow games configurations to skip Double Jeopardy
+    if (allowProceedToDouble && game.double === undefined) {
+      allowProceedToDouble = false;
+      allowProceedToFinal = true;
+    }
+
+    const clue =
+      state.currentCategoryIndex !== null && state.currentClueIndex !== null
+        ? board[state.currentCategoryIndex].clues[state.currentClueIndex]
+        : null;
+
+    return (
+      <div className="app game-screen">
+        {!display && onBoard && allowProceedToDouble && (
+          <div>
+            <button onClick={on.proceedToDouble} className="proceed-to">
+              Proceed to Double Jeopardy
+            </button>
+          </div>
+        )}
+        {!display && onBoard && allowProceedToFinal && (
+          <div>
+            <button onClick={on.proceedToFinal} className="proceed-to">
+              Proceed to Final Jeopardy
+            </button>
+          </div>
+        )}
+
+        <div className="game-main">
+          <JeopardyBoard
+            board={board}
+            backToBoard={on.backToBoard}
+            categoryShown={on.categoryShown}
+            chooseClue={on.chooseClue}
+            categoriesShown={state.numCategoriesShown}
+            currentCategory={state.currentCategoryIndex}
+            currentClue={state.currentClueIndex}
+            solution={state.solution}
+            setSolution={on.setSolution}
+            dailyDoubleShown={state.dailyDoubleShown}
+            setDailyDoubleShown={on.setDailyDoubleShown}
+            display={display}
+            hostView={hostView}
+          />
+        </div>
+        <Scoreboard
+          players={players}
+          currentValue={clue ? clue.value : null}
+          updateScore={on.updateScore}
+          wagering={clue !== null && clue.dailyDouble === true}
+          stats={false}
+          display={display}
+        />
+        {!display && (
+          <button onClick={on.downloadGame} className="download">
+            Download Game in Progress
+          </button>
+        )}
+      </div>
+    );
+  } else if (round === "final") {
+    return (
+      <div className="game-screen">
+        <div className="game-main">
+          <FinalJeopardy
+            final={game.final}
+            onFinishGame={on.finishGame}
+            stage={state.finalStage}
+            setStage={on.setFinalStage}
+            display={display}
+            hostView={hostView}
+          />
+        </div>
+        <Scoreboard
+          players={players}
+          currentValue={0}
+          updateScore={on.updateScore}
+          wagering={true}
+          stats={false}
+          display={display}
+        />
+        {!display && (
+          <button onClick={on.downloadGame} className="download">
+            Download Game in Progress
+          </button>
+        )}
+      </div>
+    );
+  } else if (round === "done") {
+    return (
+      <div>
+        <Scoreboard
+          players={players}
+          currentValue={null}
+          updateScore={on.updateScore}
+          wagering={false}
+          stats={true}
+          display={display}
+        />
+        {!display && (
+          <button onClick={on.downloadGame} className="download">
+            Download Game Result
+          </button>
+        )}
+      </div>
+    );
+  }
+  return <div>Error: Unknown game round.</div>;
+}
+
+// The TV board: shows whatever the host screen sends it
+function BoardApp() {
+  const [state, setState] = useState<BoardState | null>(null);
+
+  useEffect(() => {
+    const stop = listen((message) => {
+      if (message.type === "state") setState(message.state);
+    });
+    send({ type: "hello" });
+    const ping = window.setInterval(() => send({ type: "ping" }), 2000);
+    return () => {
+      stop();
+      window.clearInterval(ping);
+    };
+  }, []);
+
+  // F toggles full screen. Unlike F11, this kind of full screen doesn't
+  // bring the browser's toolbar back when the mouse moves to the laptop.
+  useEffect(() => {
+    function handleKey(event: KeyboardEvent) {
+      if (event.key !== "f" && event.key !== "F") return;
+      if (document.fullscreenElement) document.exitFullscreen();
+      else document.documentElement.requestFullscreen().catch(() => {});
+    }
+    document.addEventListener("keydown", handleKey);
+    return () => document.removeEventListener("keydown", handleKey);
+  }, []);
+
+  if (state === null || state.game === null || !state.isGameStarted) {
+    return (
+      <div className="board-splash">
+        <div className="board-splash-title">JEOPARDY!</div>
+        <div className="board-splash-note">
+          {state === null
+            ? "Waiting for the host screen…"
+            : state.game === null
+            ? "The host is choosing a game"
+            : "Teams are writing their names"}
+        </div>
+        <div className="board-splash-hint">Press F for full screen</div>
+      </div>
+    );
+  }
+  return renderGameScreen(
+    state,
+    { display: true, hostView: false },
+    BOARD_HANDLERS
+  );
+}
+
+function HostApp() {
   const [game, setGame] = useState<Game | null>(null);
   const [players, setPlayers] = useState<Player[]>([]);
   const [round, setRound] = useState<RoundName>(ROUND_SINGLE);
@@ -28,6 +259,51 @@ function App() {
     number | null
   >(null);
   const [currentClueIndex, setCurrentClueIndex] = useState<number | null>(null);
+  const [solution, setSolution] = useState(false);
+  const [dailyDoubleShown, setDailyDoubleShown] = useState(false);
+  const [finalStage, setFinalStage] = useState<FinalStage>("category");
+  const [boardOpen, setBoardOpen] = useState(false);
+
+  const boardState: BoardState = {
+    game,
+    players,
+    round,
+    isGameStarted,
+    numCategoriesShown,
+    currentCategoryIndex,
+    currentClueIndex,
+    solution,
+    dailyDoubleShown,
+    finalStage,
+  };
+  const latest = useRef(boardState);
+  latest.current = boardState;
+
+  // Send every change to the TV board
+  useEffect(() => {
+    send({ type: "state", state: latest.current });
+  });
+
+  // Answer the board when it opens, and notice when it closes
+  useEffect(() => {
+    let lastSeen = 0;
+    const stop = listen((message) => {
+      if (message.type === "hello") {
+        send({ type: "state", state: latest.current });
+      }
+      if (message.type === "hello" || message.type === "ping") {
+        lastSeen = Date.now();
+        setBoardOpen(true);
+      }
+    });
+    const check = window.setInterval(() => {
+      setBoardOpen(Date.now() - lastSeen < 6000);
+    }, 2000);
+    return () => {
+      stop();
+      window.clearInterval(check);
+    };
+  }, []);
 
   // Specify a game in the query string as /?game=GAME_ID loads a pre-loaded game
   useEffect(() => {
@@ -44,6 +320,18 @@ function App() {
 
     window.history.replaceState({}, document.title, window.location.pathname);
     updateGame(JSON.parse(JSON.stringify(preloadedGame)));
+  }, []);
+
+  // A clicked button keeps keyboard focus, so the next Space (meant to
+  // reveal the answer) would click it again, e.g. adding a score twice.
+  // Let go of the focus after every click.
+  useEffect(() => {
+    function release(event: MouseEvent) {
+      const button = (event.target as HTMLElement).closest("button");
+      if (button) button.blur();
+    }
+    document.addEventListener("click", release);
+    return () => document.removeEventListener("click", release);
   }, []);
 
   // Press M at any point to mute or unmute the sound cues
@@ -94,19 +382,30 @@ function App() {
     let newRound: GameRound = (newGame as any)[round];
     newRound[categoryIndex].clues[clueIndex].chosen = true;
     setGame(newGame);
+    setSolution(false);
+    setDailyDoubleShown(false);
     setCurrentCategoryIndex(categoryIndex);
     setCurrentClueIndex(clueIndex);
   }
 
   function updateScore(playerIndex: number, value: number, correct: boolean) {
-    const newPlayers = [...players];
-    players[playerIndex].score += value;
-    if (correct) players[playerIndex].correct++;
-    else players[playerIndex].incorrect++;
-    setPlayers(newPlayers);
+    setPlayers((existing) =>
+      existing.map((player, i) =>
+        i === playerIndex
+          ? {
+              ...player,
+              score: player.score + value,
+              correct: player.correct + (correct ? 1 : 0),
+              incorrect: player.incorrect + (correct ? 0 : 1),
+            }
+          : player
+      )
+    );
   }
 
   function returnToBoard() {
+    setSolution(false);
+    setDailyDoubleShown(false);
     setCurrentClueIndex(null);
     setCurrentCategoryIndex(null);
   }
@@ -118,6 +417,7 @@ function App() {
   }
 
   function proceedToFinal() {
+    setFinalStage("category");
     setRound("final");
   }
 
@@ -140,145 +440,63 @@ function App() {
     element.click();
   }
 
+  const boardButton = (
+    <button
+      className={boardOpen ? "board-button board-on" : "board-button"}
+      onClick={openBoardWindow}
+      title={
+        boardOpen
+          ? "The TV board is open in another window"
+          : "Open the board window to put on the TV"
+      }
+    >
+      📺 {boardOpen ? "Board on" : "Open board"}
+    </button>
+  );
+
+  let screen: JSX.Element;
   if (game === null) {
-    return (
+    screen = (
       <div className="app">
         <GameLoader updateGame={updateGame} />
       </div>
     );
-  }
-
-  if (!isGameStarted) {
-    return (
+  } else if (!isGameStarted) {
+    screen = (
       <div className="app">
         <PlayerChooser addTeams={addTeams} playGame={playGame} />
       </div>
     );
-  } else if (round === "single" || round === "double") {
-    const board = game[round];
-    if (board === undefined) {
-      return <div>Error: Game board not found.</div>;
-    }
-
-    // See if we should be able to proceed to Double Jeopardy
-    let allowProceedToDouble = round === "single";
-    if (allowProceedToDouble) {
-      board.forEach((category) => {
-        category.clues.forEach((clue) => {
-          if (clue.chosen === undefined) {
-            allowProceedToDouble = false;
-          }
-        });
-      });
-    }
-
-    let allowProceedToFinal = round === "double";
-    if (allowProceedToFinal) {
-      board.forEach((category) => {
-        category.clues.forEach((clue) => {
-          if (clue.chosen === undefined) {
-            allowProceedToFinal = false;
-          }
-        });
-      });
-    }
-
-    // Allow games configurations to skip Double Jeopardy
-    if (allowProceedToDouble && game.double === undefined) {
-      allowProceedToDouble = false;
-      allowProceedToFinal = true;
-    }
-
-    return (
-      <div className="app game-screen">
-        {currentCategoryIndex === null &&
-          currentClueIndex === null &&
-          allowProceedToDouble && (
-            <div>
-              <button onClick={proceedToDouble} className="proceed-to">
-                Proceed to Double Jeopardy
-              </button>
-            </div>
-          )}
-        {currentCategoryIndex === null &&
-          currentClueIndex === null &&
-          allowProceedToFinal && (
-            <div>
-              <button onClick={proceedToFinal} className="proceed-to">
-                Proceed to Final Jeopardy
-              </button>
-            </div>
-          )}
-
-        <div className="game-main">
-          <JeopardyBoard
-            board={board}
-            backToBoard={returnToBoard}
-            categoryShown={handleCategoryShown}
-            chooseClue={chooseClue}
-            categoriesShown={numCategoriesShown}
-            currentCategory={currentCategoryIndex}
-            currentClue={currentClueIndex}
-          />
-        </div>
-        <Scoreboard
-          players={players}
-          currentValue={
-            currentCategoryIndex !== null && currentClueIndex !== null
-              ? board[currentCategoryIndex].clues[currentClueIndex].value
-              : null
-          }
-          updateScore={updateScore}
-          wagering={
-            currentCategoryIndex !== null &&
-            currentClueIndex !== null &&
-            board[currentCategoryIndex].clues[currentClueIndex].dailyDouble ===
-              true
-          }
-          stats={false}
-        />
-        <button onClick={downloadGame} className="download">
-          Download Game in Progress
-        </button>
-      </div>
-    );
-  } else if (round === "final") {
-    const final = game.final;
-    return (
-      <div className="game-screen">
-        <div className="game-main">
-          <FinalJeopardy final={final} onFinishGame={finishGame} />
-        </div>
-        <Scoreboard
-          players={players}
-          currentValue={0}
-          updateScore={updateScore}
-          wagering={true}
-          stats={false}
-        />
-        <button onClick={downloadGame} className="download">
-          Download Game in Progress
-        </button>
-      </div>
-    );
-  } else if (round === "done") {
-    return (
-      <div>
-        <Scoreboard
-          players={players}
-          currentValue={null}
-          updateScore={updateScore}
-          wagering={false}
-          stats={true}
-        />
-        <button onClick={downloadGame} className="download">
-          Download Game Result
-        </button>
-      </div>
-    );
   } else {
-    return <div>Error: Unknown game round.</div>;
+    screen = renderGameScreen(
+      boardState,
+      { display: false, hostView: boardOpen },
+      {
+        backToBoard: returnToBoard,
+        categoryShown: handleCategoryShown,
+        chooseClue,
+        setSolution,
+        setDailyDoubleShown,
+        setFinalStage,
+        updateScore,
+        proceedToDouble,
+        proceedToFinal,
+        finishGame,
+        downloadGame,
+      }
+    );
   }
+
+  return (
+    <>
+      {screen}
+      {boardButton}
+    </>
+  );
+}
+
+function App() {
+  return IS_BOARD ? <BoardApp /> : <HostApp />;
 }
 
 export default App;

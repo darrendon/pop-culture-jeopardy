@@ -1,21 +1,37 @@
 import { useEffect, useState } from "react";
 import { FinalRound } from "../types";
 import { playSound, stopSound } from "../util/sounds";
+import { FinalStage } from "../util/sync";
 import ClueMedia from "./ClueMedia";
+import HostAnswer from "./HostAnswer";
 
 interface FinalJeopardyProps {
   final: FinalRound;
   onFinishGame: () => void;
+  stage: FinalStage;
+  setStage: (stage: FinalStage) => void;
+  // The TV board: no controls, keys or sounds
+  display?: boolean;
+  // Host screen while the TV board is open: show the response early
+  hostView?: boolean;
 }
 
 function FinalJeopardy(props: FinalJeopardyProps) {
-  const { final, onFinishGame } = props;
+  const {
+    final,
+    onFinishGame,
+    stage,
+    setStage,
+    display = false,
+    hostView = false,
+  } = props;
 
-  const [category, setCategory] = useState(true);
-  const [solution, setSolution] = useState(false);
+  const category = stage === "category";
+  const solution = stage === "solution";
   const [musicOn, setMusicOn] = useState(false);
 
   useEffect(() => {
+    if (display) return;
     document.addEventListener("keydown", clueKeyPress);
     return () => {
       document.removeEventListener("keydown", clueKeyPress);
@@ -24,13 +40,13 @@ function FinalJeopardy(props: FinalJeopardyProps) {
 
   // Final Jeopardy music when the category appears
   useEffect(() => {
+    if (display) return;
     playSound("final");
     return () => stopSound();
-  }, []);
+  }, [display]);
 
   function showClue() {
-    setCategory(false);
-    setSolution(false);
+    setStage("clue");
   }
 
   // The host starts and stops the think music with a button (or P)
@@ -48,7 +64,7 @@ function FinalJeopardy(props: FinalJeopardyProps) {
       stopSound();
       setMusicOn(false);
     }
-    setSolution(!solution);
+    setStage(solution ? "clue" : "solution");
   }
 
   function clueKeyPress(event: KeyboardEvent) {
@@ -69,30 +85,45 @@ function FinalJeopardy(props: FinalJeopardyProps) {
     }
   }
 
+  const hostAnswer = hostView && !solution && (
+    <HostAnswer
+      response={final.solution}
+      html={final.html === true}
+      clue={category ? final.clue : undefined}
+    />
+  );
+
   if (category) {
     return (
-      <div onClick={showClue} className="clue">
+      <div onClick={display ? undefined : showClue} className="clue">
+        {hostAnswer}
         <div className="clue-display final-category">{final.category}</div>
       </div>
     );
   }
   return (
-    <div onClick={solution ? onFinishGame : toggleSolution} className="clue">
+    <div
+      onClick={display ? undefined : solution ? onFinishGame : toggleSolution}
+      className="clue"
+    >
       {!solution && (
         <div className="clue-category-label">
           {final.category}
-          <button
-            className={musicOn ? "host-button music-on" : "host-button"}
-            title="Think music (P)"
-            onClick={(event) => {
-              event.stopPropagation();
-              toggleMusic();
-            }}
-          >
-            {musicOn ? "Stop music" : "Play think music"}
-          </button>
+          {!display && (
+            <button
+              className={musicOn ? "host-button music-on" : "host-button"}
+              title="Think music (P)"
+              onClick={(event) => {
+                event.stopPropagation();
+                toggleMusic();
+              }}
+            >
+              {musicOn ? "Stop music" : "Play think music"}
+            </button>
+          )}
         </div>
       )}
+      {hostAnswer}
       <div className="clue-display">
         <div>
           {final.html === true ? (
@@ -113,6 +144,7 @@ function FinalJeopardy(props: FinalJeopardyProps) {
               image={final.image}
               audio={final.audio}
               video={final.video}
+              onTv={hostView}
             />
           )}
         </div>

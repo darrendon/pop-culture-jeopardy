@@ -16,6 +16,19 @@ Open the site, click **Pop Culture Jeopardy** (or load any game file), have each
 
 You can also link straight to a game with `?game=pop_culture` at the end of the site address.
 
+## Host screen and board
+
+The game can run on two windows at once:
+
+- **Host screen** (the normal site address): everything you click and type, plus a yellow strip on each clue showing the correct response before you reveal it. On a Daily Double it also shows you the clue while the TV still says "Daily Double". Wagers and the score buttons stay here.
+- **Board** (press **📺 Open board** in the bottom-right corner, or add `?view=board` to the site address): only what the room should see, with no buttons, no wager boxes and no answers until you reveal them. This is the window for the TV.
+
+To put the board on the TV over HDMI, set the TV to **extend** (not mirror), drag the board window onto it, and press **F** on the board to go full screen. Unlike F11, this full screen doesn't bring the browser's toolbar or sidebar back when your mouse crosses over to the laptop. Both windows have to be open in the same browser on the same computer. The button turns into **📺 Board on** once they're connected, and if you reload the board it picks up right where the game is.
+
+Sounds play from the host window and come out of whatever your computer's sound output is set to, so pick the TV as the output if you want the sound there.
+
+If the board isn't open, everything still works from the host screen alone, just like before, with no answer strip.
+
 ## Editing the game
 
 The board lives in `src/games/pop_culture.json`. Edit it on github.com with the pencil icon and commit; the site updates on its own.

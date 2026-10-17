@@ -55,3 +55,102 @@ body,
   flex: 1;
   min-height: 0;
 }
+
+/* Host screen: opens the TV board window */
+.board-button {
+  position: fixed;
+  right: 6px;
+  bottom: 6px;
+  z-index: 10;
+  background-color: #c99f57;
+  color: black;
+  border: none;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 3px 8px;
+  cursor: pointer;
+}
+
+.board-button.board-on {
+  background-color: #404040;
+  color: #ccc;
+  opacity: 0.45;
+}
+
+.board-button.board-on:hover {
+  opacity: 1;
+}
+
+/* TV board before the game starts */
+.board-splash {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at center, #0a2bd6 0%, #001699 45%, #000a4d 100%);
+  color: white;
+  text-align: center;
+}
+
+.board-splash-title {
+  font-family: "Swiss921", sans-serif;
+  font-size: clamp(64px, 18vh, 240px);
+  color: white;
+  text-shadow: 6px 6px 0 black;
+  letter-spacing: 0.02em;
+}
+
+.board-splash-note {
+  font-family: "Korinna", serif;
+  font-size: clamp(20px, 4vh, 48px);
+  margin-top: 3vh;
+}
+
+.board-splash-hint {
+  position: fixed;
+  bottom: 2vh;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  opacity: 0.5;
+}
+
+/* Host screen with the board open: the response, for the host's eyes only */
+.host-answer {
+  background-color: #fff3c4;
+  color: #222;
+  font-family: Arial, sans-serif;
+  font-size: clamp(16px, 2.6vh, 30px);
+  text-transform: none;
+  text-align: left;
+  padding: 0.8vh 1.2vw;
+  margin: 0 0 0.8vh;
+  border-radius: 4px;
+  cursor: default;
+}
+
+.host-answer > div + div {
+  margin-top: 0.5vh;
+}
+
+.host-answer-label {
+  display: inline-block;
+  min-width: 6em;
+  font-weight: bold;
+  font-size: 0.75em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #8a5a00;
+}
+
+.media-on-tv {
+  font-family: Arial, sans-serif;
+  text-transform: none;
+  font-size: clamp(14px, 2.4vh, 28px);
+  opacity: 0.8;
+}
+
+td.board-clue.display {
+  cursor: default;
+}

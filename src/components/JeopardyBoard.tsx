@@ -1,8 +1,9 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import { Clue, GameRound } from "../types";
 import { playSound, playTimesUp, stopSound } from "../util/sounds";
 import ClueMedia from "./ClueMedia";
+import HostAnswer from "./HostAnswer";
 import "./JeopardyBoard.css";
 
 interface JeopardyBoardProps {
@@ -13,6 +14,14 @@ interface JeopardyBoardProps {
   chooseClue: (categoryIndex: number, clueIndex: number) => void;
   currentCategory: number | null;
   currentClue: number | null;
+  solution: boolean;
+  setSolution: (shown: boolean) => void;
+  dailyDoubleShown: boolean;
+  setDailyDoubleShown: (shown: boolean) => void;
+  // The TV board: draws the same screens with no controls, keys or sounds
+  display?: boolean;
+  // Host screen while the TV board is open: show the host the response early
+  hostView?: boolean;
 }
 
 function JeopardyBoard(props: JeopardyBoardProps) {
@@ -24,24 +33,28 @@ function JeopardyBoard(props: JeopardyBoardProps) {
     chooseClue,
     currentCategory,
     currentClue,
+    solution,
+    setSolution,
+    dailyDoubleShown,
+    setDailyDoubleShown,
+    display = false,
+    hostView = false,
   } = props;
-
-  const [solution, setSolution] = useState(false);
-  const [dailyDoubleScreenPresented, setDailyDoubleScreenPresented] =
-    useState(false);
 
   // Play the Daily Double sting when one is revealed; otherwise cut off
   // any round music once the host opens a clue.
   useEffect(() => {
+    if (display) return;
     if (currentCategory === null || currentClue === null) return;
     if (board[currentCategory].clues[currentClue].dailyDouble) {
       playSound("daily_double");
     } else {
       stopSound();
     }
-  }, [board, currentCategory, currentClue]);
+  }, [board, currentCategory, currentClue, display]);
 
   useEffect(() => {
+    if (display) return;
     document.addEventListener("keydown", clueKeyPress);
     return () => {
       document.removeEventListener("keydown", clueKeyPress);
@@ -50,7 +63,10 @@ function JeopardyBoard(props: JeopardyBoardProps) {
 
   function renderCategory(index: number) {
     return (
-      <div onClick={categoryShown} className="category-container">
+      <div
+        onClick={display ? undefined : categoryShown}
+        className="category-container"
+      >
         <TransitionGroup>
           <CSSTransition key={index} timeout={1000} classNames="categorybox">
             <div className="category-box">
@@ -62,23 +78,20 @@ function JeopardyBoard(props: JeopardyBoardProps) {
     );
   }
 
-  function renderClue(categoryName: string, clue: Clue, value: number) {
-    const showDailyDoubleScreen =
-      clue.dailyDouble && !dailyDoubleScreenPresented;
+  function renderClue(categoryName: string, clue: Clue) {
+    const showDailyDoubleScreen = clue.dailyDouble && !dailyDoubleShown;
+    const onClick = display
+      ? undefined
+      : showDailyDoubleScreen
+      ? switchDDToClue
+      : solution
+      ? returnToBoard
+      : toggleSolution;
     return (
-      <div
-        onClick={
-          showDailyDoubleScreen
-            ? switchDDToClue
-            : solution
-            ? returnToBoard
-            : toggleSolution
-        }
-        className="clue"
-      >
+      <div onClick={onClick} className="clue">
         <div className="clue-category-label">
           {categoryName} - ${clue.value}
-          {!showDailyDoubleScreen && !solution && (
+          {!display && !showDailyDoubleScreen && !solution && (
             <button
               className="host-button times-up-button"
               title="Time's up (T)"
@@ -91,6 +104,13 @@ function JeopardyBoard(props: JeopardyBoardProps) {
             </button>
           )}
         </div>
+        {hostView && !solution && (
+          <HostAnswer
+            response={clue.solution}
+            html={clue.html === true}
+            clue={showDailyDoubleScreen ? clue.clue : undefined}
+          />
+        )}
         <div
           className={
             showDailyDoubleScreen ? "clue-display daily-double" : "clue-display"
@@ -119,6 +139,7 @@ function JeopardyBoard(props: JeopardyBoardProps) {
                   image={clue.image}
                   audio={clue.audio}
                   video={clue.video}
+                  onTv={hostView}
                 />
               )}
             </div>
@@ -129,6 +150,9 @@ function JeopardyBoard(props: JeopardyBoardProps) {
   }
 
   function clueKeyPress(event: KeyboardEvent) {
+    const target = event.target as HTMLElement;
+    if (target.tagName === "INPUT") return;
+
     // First check for categoriesShown
     if (
       categoriesShown < board.length &&
@@ -142,18 +166,14 @@ function JeopardyBoard(props: JeopardyBoardProps) {
     }
     const clue = board[currentCategory].clues[currentClue];
 
-    const target = event.target as HTMLElement;
-    if (
-      (event.key === "t" || event.key === "T") &&
-      target.tagName !== "INPUT"
-    ) {
+    if (event.key === "t" || event.key === "T") {
       playTimesUp();
       return;
     }
 
     if (event.key === " " || event.key === "Enter") {
       // If we just showed the Daily Double screen, switch to the clue
-      if (clue.dailyDouble && !dailyDoubleScreenPresented) {
+      if (clue.dailyDouble && !dailyDoubleShown) {
         switchDDToClue();
       } else {
         toggleSolution();
@@ -165,12 +185,10 @@ function JeopardyBoard(props: JeopardyBoardProps) {
 
   function switchDDToClue() {
     setSolution(false);
-    setDailyDoubleScreenPresented(true);
+    setDailyDoubleShown(true);
   }
 
   function returnToBoard() {
-    setSolution(false);
-    setDailyDoubleScreenPresented(false);
     backToBoard();
   }
 
@@ -187,8 +205,7 @@ function JeopardyBoard(props: JeopardyBoardProps) {
   if (currentCategory !== null && currentClue !== null) {
     return renderClue(
       board[currentCategory].category,
-      board[currentCategory].clues[currentClue],
-      board[currentCategory].clues[currentClue].value
+      board[currentCategory].clues[currentClue]
     );
   }
 
@@ -215,8 +232,10 @@ function JeopardyBoard(props: JeopardyBoardProps) {
                   return (
                     <td
                       key={i}
-                      onClick={() => chooseClue(i, j)}
-                      className="board-clue"
+                      onClick={display ? undefined : () => chooseClue(i, j)}
+                      className={
+                        display ? "board-clue display" : "board-clue"
+                      }
                     >
                       ${category.clues[j].value}
                     </td>

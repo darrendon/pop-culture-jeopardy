@@ -15,10 +15,19 @@ interface ScoreboardProps {
   stats: boolean;
   updateScore: (i: number, clueValue: number, correct: boolean) => void;
   wagering: boolean;
+  // The TV board: scores only, no wagers or buttons
+  display?: boolean;
 }
 
 function Scoreboard(props: ScoreboardProps) {
-  const { currentValue, players, stats, updateScore, wagering } = props;
+  const {
+    currentValue,
+    players,
+    stats,
+    updateScore,
+    wagering,
+    display = false,
+  } = props;
 
   const [wagers, setWagers] = useState<string[]>(() => {
     return players.map(() => "");
@@ -48,7 +57,7 @@ function Scoreboard(props: ScoreboardProps) {
             player.name
           )}
         </div>
-        {wagering && (
+        {!display && wagering && (
           <div>
             <input
               className="wager-box"
@@ -57,7 +66,7 @@ function Scoreboard(props: ScoreboardProps) {
             />
           </div>
         )}
-        {currentValue !== null && clueValue !== null && (
+        {!display && currentValue !== null && clueValue !== null && (
           <div>
             <button
               onClick={() => updateScoreboardScore(i, -clueValue, false)}
