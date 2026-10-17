@@ -3,8 +3,10 @@
 
 import sample from "../games/sample.json";
 import pop_culture from "../games/pop_culture.json";
+import pop_culture_2 from "../games/pop_culture_2.json";
 
 export const preloadedGames = {
   sample,
   pop_culture,
+  pop_culture_2,
 };

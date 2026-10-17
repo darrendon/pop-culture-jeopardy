@@ -49,7 +49,7 @@ function GameLoader(props: GameLoaderProps) {
       <h1>Jeopardy Player</h1>
       <p>Based on the Jeopardy Player by Brian Yu</p>
       <hr />
-      <h2>Play a Game</h2>
+      <h2>Pop Culture Jeopardy</h2>
       <div className="preloaded-games">
         <button
           onClick={() =>
@@ -57,7 +57,14 @@ function GameLoader(props: GameLoaderProps) {
             updateGame(JSON.parse(JSON.stringify(preloadedGames.pop_culture)))
           }
         >
-          Pop Culture Jeopardy
+          Episode 1
+        </button>
+        <button
+          onClick={() =>
+            updateGame(JSON.parse(JSON.stringify(preloadedGames.pop_culture_2)))
+          }
+        >
+          Episode 2
         </button>
       </div>
       <p className="loader-note">or load a game file</p>

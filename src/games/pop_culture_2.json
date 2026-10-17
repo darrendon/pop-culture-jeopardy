@@ -1,0 +1,376 @@
+{
+    "game": {
+        "single": [
+            {
+                "category": "Went Viral",
+                "clues": [
+                    {
+                        "value": 200,
+                        "clue": "In July 2025 a couple's panicked duck on the kiss cam at this band's concert near Boston led to a tech CEO's resignation",
+                        "solution": "What is Coldplay?"
+                    },
+                    {
+                        "value": 400,
+                        "clue": "Lionel Messi's 2022 World Cup celebration photos dethroned a picture of this as the most-liked post in Instagram history",
+                        "solution": "What is an egg?"
+                    },
+                    {
+                        "value": 600,
+                        "clue": "After a woman's car burned in 2023, her tumbler from this brand survived with ice still inside, & the company bought her a new car",
+                        "solution": "What is Stanley?"
+                    },
+                    {
+                        "value": 800,
+                        "clue": "Skateboarding while swigging cranberry juice, Nathan Apodaca sent this 1977 Fleetwood Mac song back onto the charts in 2020",
+                        "solution": "What is \"Dreams\"?"
+                    },
+                    {
+                        "value": 1000,
+                        "clue": "Michael Bay is producing a movie based on this YouTube series of shorts in which singing heads pop out of porcelain bowls",
+                        "solution": "What is \"Skibidi Toilet\"?"
+                    }
+                ]
+            },
+            {
+                "category": "Toon In",
+                "clues": [
+                    {
+                        "value": 200,
+                        "clue": "Bandit & Chilli Heeler are the parents of this title Australian pup in a hit kids' cartoon",
+                        "solution": "Who is Bluey?"
+                    },
+                    {
+                        "value": 400,
+                        "clue": "Voiced by Maya Hawke, this frazzled orange emotion staged a takeover of Riley's mind in \"Inside Out 2\"",
+                        "solution": "What is Anxiety?"
+                    },
+                    {
+                        "value": 600,
+                        "clue": "Made without any dialogue, this movie about a cat surviving a great deluge won Latvia's first Oscar",
+                        "solution": "What is \"Flow\"?"
+                    },
+                    {
+                        "value": 800,
+                        "clue": "Shameik Moore voices this Brooklyn teen who becomes a web-slinger in the \"Spider-Verse\" films",
+                        "solution": "Who is Miles Morales?"
+                    },
+                    {
+                        "value": 1000,
+                        "clue": "This Oscar winner voiced Roz, a machine stranded on an island, in 2024's \"The Wild Robot\"",
+                        "solution": "Who is Lupita Nyong'o?"
+                    }
+                ]
+            },
+            {
+                "category": "Food Fads",
+                "clues": [
+                    {
+                        "value": 200,
+                        "clue": "Filled with pistachio cream & crunchy kataifi pastry, chocolate bars named for this emirate went viral in 2024",
+                        "solution": "What is Dubai?"
+                    },
+                    {
+                        "value": 400,
+                        "clue": "Hailey Bieber's \"Strawberry Glaze Skin Smoothie\" goes for nearly $20 at this pricey L.A. grocery chain",
+                        "solution": "What is Erewhon?"
+                    },
+                    {
+                        "value": 600,
+                        "clue": "YouTubers Logan Paul & KSI launched this hydration drink in 2022, & fans mobbed stores to snag bottles",
+                        "solution": "What is Prime?"
+                    },
+                    {
+                        "value": 800,
+                        "clue": "A 2023 TikTok trend, this 2-word meal is a plate of random snacks like cheese, crackers & pickles",
+                        "solution": "What is girl dinner?",
+                        "dailyDouble": true
+                    },
+                    {
+                        "value": 1000,
+                        "clue": "Famous for its pink boxes, this Utah-born chain rotates its cookie flavors every week",
+                        "solution": "What is Crumbl?"
+                    }
+                ]
+            },
+            {
+                "category": "Disney Channel Days",
+                "clues": [
+                    {
+                        "value": 200,
+                        "clue": "Miley Cyrus played a teen leading a double life as this blond-wigged pop star",
+                        "solution": "Who is Hannah Montana?"
+                    },
+                    {
+                        "value": 400,
+                        "clue": "\"High School Musical\" is set at East High, home of these sports teams",
+                        "solution": "What are the Wildcats?"
+                    },
+                    {
+                        "value": 600,
+                        "clue": "This star executive-produces \"Wizards Beyond Waverly Place\" & has returned in it as Alex Russo",
+                        "solution": "Who is Selena Gomez?"
+                    },
+                    {
+                        "value": 800,
+                        "clue": "Raven Baxter, who saw glimpses of the future, punctuated her visions with this 2-word catchphrase",
+                        "solution": "What is \"Oh, snap!\"?"
+                    },
+                    {
+                        "value": 1000,
+                        "clue": "In this 1999 Disney Channel Original Movie, a teen programs his family's high-tech home, run by a computer named PAT, to act like a mom, with smothering results",
+                        "solution": "What is \"Smart House\"?"
+                    }
+                ]
+            },
+            {
+                "category": "The Late Shift",
+                "clues": [
+                    {
+                        "value": 200,
+                        "clue": "In 2025 this NBC sketch show celebrated its 50th anniversary with a 3½-hour prime-time special",
+                        "solution": "What is \"Saturday Night Live\"?"
+                    },
+                    {
+                        "value": 400,
+                        "clue": "Sean Evans interviews stars as they eat increasingly spicy chicken wings on this YouTube show",
+                        "solution": "What is \"Hot Ones\"?"
+                    },
+                    {
+                        "value": 600,
+                        "clue": "\"Lip Sync Battle\" started as a segment on this host's NBC talk show before getting its own series",
+                        "solution": "Who is Jimmy Fallon?"
+                    },
+                    {
+                        "value": 800,
+                        "clue": "James Corden belted out songs with stars like Adele while driving around L.A. in this \"Late Late Show\" segment",
+                        "solution": "What is Carpool Karaoke?"
+                    },
+                    {
+                        "value": 1000,
+                        "clue": "Celebrities read cruel social media posts about themselves aloud in this recurring Jimmy Kimmel segment",
+                        "solution": "What is \"Mean Tweets\"?"
+                    }
+                ]
+            },
+            {
+                "category": "Rhyme Time",
+                "clues": [
+                    {
+                        "value": 200,
+                        "clue": "A Hans Zimmer score for a Timothée Chalamet sand-planet epic",
+                        "solution": "What is a Dune tune?"
+                    },
+                    {
+                        "value": 400,
+                        "clue": "A long journey for a certain green ogre & his chatty Donkey",
+                        "solution": "What is a Shrek trek?"
+                    },
+                    {
+                        "value": 600,
+                        "clue": "The inner peace found by Ryan Gosling's \"Barbie\" character",
+                        "solution": "What is Ken zen?"
+                    },
+                    {
+                        "value": 800,
+                        "clue": "A cap in the lime-green shade of Charli xcx's 2024 album",
+                        "solution": "What is a brat hat?"
+                    },
+                    {
+                        "value": 1000,
+                        "clue": "A tough day's puzzle in the New York Times' 5-letter guessing game",
+                        "solution": "What is a Wordle hurdle?"
+                    }
+                ]
+            }
+        ],
+        "double": [
+            {
+                "category": "Paris 2024",
+                "clues": [
+                    {
+                        "value": 400,
+                        "clue": "This rapper turned NBC correspondent carried the Olympic torch & cheered on equestrians in Paris",
+                        "solution": "Who is Snoop Dogg?"
+                    },
+                    {
+                        "value": 800,
+                        "clue": "Celine Dion closed the opening ceremony singing Édith Piaf's \"Hymne à l'amour\" from this landmark",
+                        "solution": "What is the Eiffel Tower?"
+                    },
+                    {
+                        "value": 1200,
+                        "clue": "Norwegian swimmer Henrik Christiansen became a TikTok star raving about these Olympic Village baked treats",
+                        "solution": "What are chocolate muffins?"
+                    },
+                    {
+                        "value": 1600,
+                        "clue": "Team USA's Stephen Nedoroscik waited all night to perform one routine on this apparatus, then clinched a team bronze",
+                        "solution": "What is the pommel horse?"
+                    },
+                    {
+                        "value": 2000,
+                        "clue": "Turkey's Yusuf Dikeç won silver in this sport wearing regular glasses with one hand in his pocket",
+                        "solution": "What is shooting? (air pistol)"
+                    }
+                ]
+            },
+            {
+                "category": "Must-Haves",
+                "clues": [
+                    {
+                        "value": 400,
+                        "clue": "Lisa of Blackpink helped make this toothy, bunny-eared Pop Mart monster a must-have bag charm",
+                        "solution": "What is Labubu?"
+                    },
+                    {
+                        "value": 800,
+                        "clue": "Inspired by a lyric in \"You're on Your Own, Kid\", Swifties traded these handmade accessories at the Eras Tour",
+                        "solution": "What are friendship bracelets?"
+                    },
+                    {
+                        "value": 1200,
+                        "clue": "Logan Paul's Pikachu Illustrator, which sold for $16.5 million in 2026, is the priciest of these ever sold",
+                        "solution": "What is a Pokémon card?"
+                    },
+                    {
+                        "value": 1600,
+                        "clue": "Sold in blind boxes, these tiny cherub figurines wear animal or veggie hats & like to perch on phones",
+                        "solution": "What are Sonny Angels?"
+                    },
+                    {
+                        "value": 2000,
+                        "clue": "This British plush brand's smiling croissants & bok choy are \"cooked\" for customers at its pop-up diner inside FAO Schwarz",
+                        "solution": "What is Jellycat?"
+                    }
+                ]
+            },
+            {
+                "category": "Award Season",
+                "clues": [
+                    {
+                        "value": 400,
+                        "clue": "Its song \"Golden\" won an Oscar in 2026, & this Netflix film took home Best Animated Feature too",
+                        "solution": "What is \"KPop Demon Hunters\"?"
+                    },
+                    {
+                        "value": 800,
+                        "clue": "Seth Rogen's Hollywood satire, this series set a record for a comedy with 13 Emmy wins in 2025",
+                        "solution": "What is \"The Studio\"?"
+                    },
+                    {
+                        "value": 1200,
+                        "clue": "With 4 Oscars in one night for \"Anora\", this director tied Walt Disney's 1954 record",
+                        "solution": "Who is Sean Baker?"
+                    },
+                    {
+                        "value": 1600,
+                        "clue": "In 2026 Bad Bunny's \"Debí Tirar Más Fotos\" became the first album in this language to win the Grammy for Album of the Year",
+                        "solution": "What is Spanish?"
+                    },
+                    {
+                        "value": 2000,
+                        "clue": "Paul Thomas Anderson finally won Best Director in 2026 for this Leonardo DiCaprio film inspired by Thomas Pynchon's \"Vineland\"",
+                        "solution": "What is \"One Battle After Another\"?"
+                    }
+                ]
+            },
+            {
+                "category": "Y2K Hits",
+                "clues": [
+                    {
+                        "value": 400,
+                        "clue": "Wedding dance floors still fill for \"Mr. Brightside\", the debut single by this Las Vegas band",
+                        "solution": "Who are The Killers?"
+                    },
+                    {
+                        "value": 800,
+                        "clue": "Polaroid actually warned fans not to shake its photos after this 2003 OutKast smash told them to",
+                        "solution": "What is \"Hey Ya!\"?"
+                    },
+                    {
+                        "value": 1200,
+                        "clue": "This rapper & future husband of Beyoncé delivered the opening verse on Rihanna's 2007 \"Umbrella\"",
+                        "solution": "Who is Jay-Z?",
+                        "dailyDouble": true
+                    },
+                    {
+                        "value": 1600,
+                        "clue": "Kelly Clarkson's \"Since U Been Gone\" was co-written by Dr. Luke & this Swedish hitmaker behind \"Oops!... I Did It Again\"",
+                        "solution": "Who is Max Martin?"
+                    },
+                    {
+                        "value": 2000,
+                        "clue": "Nelly repped his hometown, this \"Gateway to the West\", on his 2000 debut \"Country Grammar\"",
+                        "solution": "What is St. Louis?"
+                    }
+                ]
+            },
+            {
+                "category": "Game On",
+                "clues": [
+                    {
+                        "value": 400,
+                        "clue": "Nintendo sold 3.5 million units of this console in its first 4 days in 2025",
+                        "solution": "What is the Switch 2?"
+                    },
+                    {
+                        "value": 800,
+                        "clue": "Rowdy audiences at \"A Minecraft Movie\" erupted when Jack Black shouted this 2-word phrase for a baby zombie riding a bird",
+                        "solution": "What is \"chicken jockey\"?"
+                    },
+                    {
+                        "value": 1200,
+                        "clue": "\"Animal Crossing: New Horizons\", a 2020 lockdown hit, has players pay off home loans to this raccoon-like tycoon",
+                        "solution": "Who is Tom Nook?"
+                    },
+                    {
+                        "value": 1600,
+                        "clue": "In the hit poker roguelike \"Balatro\", you collect these rule-bending cards, like the Gros Michel & the Blueprint",
+                        "solution": "What are jokers?",
+                        "dailyDouble": true
+                    },
+                    {
+                        "value": 2000,
+                        "clue": "This French RPG made Game Awards history in 2025, winning 9 trophies including Game of the Year",
+                        "solution": "What is \"Clair Obscur: Expedition 33\"?"
+                    }
+                ]
+            },
+            {
+                "category": "Broadway Bound",
+                "clues": [
+                    {
+                        "value": 400,
+                        "clue": "Lin-Manuel Miranda's blockbuster musical tells the story of this Founding Father on the $10 bill",
+                        "solution": "Who is Alexander Hamilton?"
+                    },
+                    {
+                        "value": 800,
+                        "clue": "Cole Escola won a 2025 Tony for playing a cabaret-crazed, wildly unhinged version of this first lady",
+                        "solution": "Who is Mary Todd Lincoln?"
+                    },
+                    {
+                        "value": 1200,
+                        "clue": "Nicole Scherzinger won a Tony as faded film star Norma Desmond in a revival of this Andrew Lloyd Webber musical",
+                        "solution": "What is \"Sunset Blvd.\"?"
+                    },
+                    {
+                        "value": 1600,
+                        "clue": "Darren Criss won a Tony playing a lovelorn robot in Seoul in this 2025 Best Musical winner",
+                        "solution": "What is \"Maybe Happy Ending\"?"
+                    },
+                    {
+                        "value": 2000,
+                        "clue": "Denzel Washington & Jake Gyllenhaal broke Broadway's box office record for a play in a 2025 revival of this Shakespeare tragedy",
+                        "solution": "What is \"Othello\"?"
+                    }
+                ]
+            }
+        ],
+        "final": {
+            "category": "Late-Night Legends",
+            "clue": "When \"The Late Show\" signed off in May 2026, it ended a franchise this host launched in 1993 in the theater where the Beatles first played live on U.S. TV",
+            "solution": "Who is David Letterman?"
+        }
+    }
+}
