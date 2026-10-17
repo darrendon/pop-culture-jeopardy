@@ -13,6 +13,7 @@ function FinalJeopardy(props: FinalJeopardyProps) {
 
   const [category, setCategory] = useState(true);
   const [solution, setSolution] = useState(false);
+  const [musicOn, setMusicOn] = useState(false);
 
   useEffect(() => {
     document.addEventListener("keydown", clueKeyPress);
@@ -27,19 +28,36 @@ function FinalJeopardy(props: FinalJeopardyProps) {
     return () => stopSound();
   }, []);
 
-  // Think music starts with the clue and stops when the answer is shown
   function showClue() {
     setCategory(false);
     setSolution(false);
-    playSound("think");
+  }
+
+  // The host starts and stops the think music with a button (or P)
+  function toggleMusic() {
+    if (musicOn) {
+      stopSound();
+      setMusicOn(false);
+    } else if (playSound("think", () => setMusicOn(false))) {
+      setMusicOn(true);
+    }
   }
 
   function toggleSolution() {
-    if (!solution) stopSound();
+    if (!solution) {
+      stopSound();
+      setMusicOn(false);
+    }
     setSolution(!solution);
   }
 
   function clueKeyPress(event: KeyboardEvent) {
+    const target = event.target as HTMLElement;
+    if (target.tagName === "INPUT") return;
+    if ((event.key === "p" || event.key === "P") && !category && !solution) {
+      toggleMusic();
+      return;
+    }
     if (event.key === " " || event.key === "Enter") {
       if (category) {
         showClue();
@@ -60,6 +78,21 @@ function FinalJeopardy(props: FinalJeopardyProps) {
   }
   return (
     <div onClick={solution ? onFinishGame : toggleSolution} className="clue">
+      {!solution && (
+        <div className="clue-category-label">
+          {final.category}
+          <button
+            className={musicOn ? "host-button music-on" : "host-button"}
+            title="Think music (P)"
+            onClick={(event) => {
+              event.stopPropagation();
+              toggleMusic();
+            }}
+          >
+            {musicOn ? "Stop music" : "Play think music"}
+          </button>
+        </div>
+      )}
       <div className="clue-display">
         <div>
           {final.html === true ? (

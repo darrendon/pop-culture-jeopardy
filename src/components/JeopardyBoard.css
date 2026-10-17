@@ -181,3 +181,35 @@ td.board-clue {
 .clue-media audio {
   width: min(500px, 80vw);
 }
+
+/* Host-only buttons on clue screens */
+.clue-category-label {
+  position: relative;
+}
+
+.host-button {
+  position: absolute;
+  right: 0.5vw;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  text-transform: none;
+  font-size: clamp(13px, 1.8vh, 22px);
+  padding: 0.5vh 1vw;
+  border: none;
+  border-radius: 4px;
+  background-color: #404040;
+  color: white;
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.host-button:hover {
+  opacity: 1;
+}
+
+.host-button.music-on {
+  background-color: #b53f18;
+  opacity: 1;
+}

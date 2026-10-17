@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import { Clue, GameRound } from "../types";
-import { playSound, stopSound } from "../util/sounds";
+import { playSound, playTimesUp, stopSound } from "../util/sounds";
 import ClueMedia from "./ClueMedia";
 import "./JeopardyBoard.css";
 
@@ -78,6 +78,18 @@ function JeopardyBoard(props: JeopardyBoardProps) {
       >
         <div className="clue-category-label">
           {categoryName} - ${clue.value}
+          {!showDailyDoubleScreen && !solution && (
+            <button
+              className="host-button times-up-button"
+              title="Time's up (T)"
+              onClick={(event) => {
+                event.stopPropagation();
+                playTimesUp();
+              }}
+            >
+              Time's up
+            </button>
+          )}
         </div>
         <div
           className={
@@ -129,6 +141,15 @@ function JeopardyBoard(props: JeopardyBoardProps) {
       return;
     }
     const clue = board[currentCategory].clues[currentClue];
+
+    const target = event.target as HTMLElement;
+    if (
+      (event.key === "t" || event.key === "T") &&
+      target.tagName !== "INPUT"
+    ) {
+      playTimesUp();
+      return;
+    }
 
     if (event.key === " " || event.key === "Enter") {
       // If we just showed the Daily Double screen, switch to the clue

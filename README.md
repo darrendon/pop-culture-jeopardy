@@ -6,11 +6,13 @@ The site rebuilds and republishes itself on GitHub Pages whenever you change a f
 
 ## Playing
 
-Open the site, click **Pop Culture Jeopardy** (or load any game file), add players, then click through the board. Keyboard shortcuts for the host:
+Open the site, click **Pop Culture Jeopardy** (or load any game file), have each of the 4 teams write their name in a box with a finger, stylus or mouse, then click through the board. The handwritten names show on the podiums. Keyboard shortcuts for the host:
 
 - **Space / Enter:** reveal the next category, show the answer, or continue
 - **Escape:** go back to the board
 - **M:** mute or unmute sounds
+- **T:** play the time's-up sound on an open clue (or click "Time's up")
+- **P:** start or stop the Final Jeopardy think music (or click "Play think music")
 
 You can also link straight to a game with `?game=pop_culture` at the end of the site address.
 
@@ -62,7 +64,8 @@ Sound files live in `public/sounds/`. Which file plays when is set at the top of
 | Double Jeopardy starts | `single.mp3` |
 | Final Jeopardy category appears | `single.mp3` |
 | A Daily Double is revealed | `dailydouble.mp3` |
-| Final Jeopardy clue, until the answer is revealed | `final.mp3` |
+| Final Jeopardy think music, started by the host | `final.mp3` |
+| Time's up button | `timesup.mp3` (a built-in buzzer plays if this file is missing) |
 
 Any file that's missing is skipped. Round music stops when you open a clue.
 

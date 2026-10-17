@@ -37,7 +37,17 @@ function Scoreboard(props: ScoreboardProps) {
     return (
       <div key={i} className="podium">
         <div className="podium-score">{scoreString}</div>
-        <div className="podium-name">{player.name}</div>
+        <div className="podium-name">
+          {player.signature ? (
+            <img
+              className="podium-signature"
+              src={player.signature}
+              alt={player.name}
+            />
+          ) : (
+            player.name
+          )}
+        </div>
         {wagering && (
           <div>
             <input

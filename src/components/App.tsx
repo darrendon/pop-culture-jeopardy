@@ -66,8 +66,17 @@ function App() {
     setGame(data.game);
   }
 
-  function addPlayer(name: string) {
-    setPlayers([...players, { name, score: 0, correct: 0, incorrect: 0 }]);
+  function addTeams(teams: { name: string; signature: string | null }[]) {
+    setPlayers((existing) => [
+      ...existing,
+      ...teams.map((team) => ({
+        name: team.name,
+        signature: team.signature,
+        score: 0,
+        correct: 0,
+        incorrect: 0,
+      })),
+    ]);
   }
 
   function playGame() {
@@ -142,11 +151,7 @@ function App() {
   if (!isGameStarted) {
     return (
       <div className="app">
-        <PlayerChooser
-          players={players}
-          addPlayer={addPlayer}
-          playGame={playGame}
-        />
+        <PlayerChooser addTeams={addTeams} playGame={playGame} />
       </div>
     );
   } else if (round === "single" || round === "double") {

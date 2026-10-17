@@ -46,3 +46,9 @@
 .stats {
   font-size: 18px;
 }
+
+.podium-signature {
+  display: block;
+  height: clamp(36px, 7vh, 96px);
+  margin: 0.3vh auto 0;
+}

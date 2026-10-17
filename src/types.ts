@@ -8,6 +8,8 @@ export interface GameData {
 // Represents a player in the Jeopardy game
 export interface Player {
   name: string;
+  // Handwritten team name drawn on the setup screen (PNG data URL)
+  signature?: string | null;
   score: number;
   correct: number;
   incorrect: number;

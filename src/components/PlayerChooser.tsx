@@ -1,62 +1,51 @@
-import { ChangeEvent, KeyboardEvent, useState } from "react";
+import { useState } from "react";
 
-import { Player } from "../types";
+import SignaturePad from "./SignaturePad";
 
 import "./PlayerChooser.css";
 
+const TEAM_COUNT = 4;
+
 interface PlayerChooserProps {
-  addPlayer: (name: string) => void;
-  players: Player[];
+  addTeams: (teams: { name: string; signature: string | null }[]) => void;
   playGame: () => void;
 }
 
+// Each team writes its name in a box; the drawings appear on the podiums.
 function PlayerChooser(props: PlayerChooserProps) {
-  const { addPlayer: addPlayerByName, playGame, players } = props;
-  const [name, setName] = useState("");
+  const { addTeams, playGame } = props;
+  const [signatures, setSignatures] = useState<(string | null)[]>(
+    Array(TEAM_COUNT).fill(null)
+  );
 
-  function addPlayer() {
-    addPlayerByName(name);
-    setName("");
+  function setSignature(index: number, signature: string | null) {
+    setSignatures((existing) =>
+      existing.map((s, i) => (i === index ? signature : s))
+    );
   }
 
-  function handleKeyDown(event: KeyboardEvent<HTMLInputElement>) {
-    if (event.key === "Enter") {
-      addPlayer();
-    }
-  }
-
-  function handleNameChange(event: ChangeEvent<HTMLInputElement>) {
-    setName(event.target.value);
+  function start() {
+    addTeams(
+      signatures.map((signature, i) => ({ name: `Team ${i + 1}`, signature }))
+    );
+    playGame();
   }
 
   return (
     <div className="player-chooser">
-      <div>
-        <h1>Players</h1>
-        <ul>
-          {players.map((player, i) => (
-            <li key={i}>{player.name}</li>
-          ))}
-        </ul>
+      <h1>Write your team name</h1>
+      <div className="signature-grid">
+        {signatures.map((_, i) => (
+          <SignaturePad
+            key={i}
+            label={`Team ${i + 1}`}
+            onChange={(signature) => setSignature(i, signature)}
+          />
+        ))}
       </div>
-      <div>
-        <input
-          value={name}
-          onKeyDown={handleKeyDown}
-          onChange={handleNameChange}
-          autoFocus
-          type="text"
-          placeholder="Player Name"
-        />
-        <button className="add-player-button" onClick={addPlayer}>
-          Add Player
-        </button>
-      </div>
-      <div>
-        <button className="play-game-button" onClick={playGame}>
-          Play Game
-        </button>
-      </div>
+      <button className="play-game-button" onClick={start}>
+        Play Game
+      </button>
     </div>
   );
 }

@@ -1,23 +1,67 @@
 .player-chooser {
-  font-family: "Korinna-Bold";
+  font-family: "Korinna", serif;
+  color: white;
+  text-align: center;
+  min-height: 100vh;
+  box-sizing: border-box;
+  padding: 3vh 3vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.player-chooser input {
-  height: 20px;
-  margin: 10px;
-  width: 200px;
+.player-chooser h1 {
+  font-size: clamp(28px, 5vh, 60px);
+  margin: 0 0 3vh;
 }
 
-.player-chooser button {
-  width: 100px;
-  height: 25px;
+.signature-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 3vh 3vw;
+  width: min(100%, 140vh);
+}
+
+.signature-pad {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.signature-label {
+  font-family: "Swiss921", sans-serif;
+  font-size: clamp(18px, 3vh, 36px);
+  margin-bottom: 1vh;
+}
+
+.signature-pad canvas {
+  width: 100%;
+  aspect-ratio: 2 / 1;
+  border: 4px solid #c99f57;
+  border-radius: 6px;
+  touch-action: none;
+  cursor: crosshair;
+  background-color: #001699;
+}
+
+.signature-clear {
+  margin-top: 1vh;
+  padding: 6px 18px;
+  font-size: clamp(14px, 2vh, 22px);
   border: none;
-  border-radius: 3px;
-}
-
-.add-player-button {
+  border-radius: 4px;
+  background-color: #404040;
+  color: white;
+  cursor: pointer;
 }
 
 .play-game-button {
+  margin-top: 4vh;
+  padding: 1.5vh 4vw;
+  font-family: "Swiss921", sans-serif;
+  font-size: clamp(22px, 4vh, 48px);
+  border: none;
+  border-radius: 6px;
   background-color: #61c27b;
+  cursor: pointer;
 }
